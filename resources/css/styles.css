@@ -17,3 +17,13 @@ html {
   margin: 0px;
   padding: 0px;
 }
+
+#mc_embed_signup {
+  clear: left;
+}
+
+.mc-field-group > div > input {
+  border: none;
+  background-color: #f8f1ee;
+  padding: 10px;
+}
