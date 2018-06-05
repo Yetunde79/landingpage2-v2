@@ -22,9 +22,9 @@ nav{
   box-shadow: 5px 5px 5px#C8C8C8;
   background-color: white;
 } 
-
+/*check out font size relativeness*/
 .nav-a{
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 #navbars{
@@ -35,22 +35,23 @@ nav{
   width: 60%;
 } 
 
-.first-section{
+.centered{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
 }
 
-button { 
+.first-section{
+  color: white;
+}
 
+button { 
     background: white;
     border: none;
     border-radius: 12px;
     color: black; /* make transparent*/
     font-size: 1.3em;
-
 }
 
 .first-section h1{
@@ -58,6 +59,33 @@ button {
 }
 
 .first-section p{
-  font-size: 2.3em;
-  
+  font-size: 2em; 
+}
+
+.second-section{
+  padding-top: 1.5%;
+}
+
+.second-section p{
+  font-size: 1.6em;
+  font-weight:500;
+  letter-spacing: none;
+}
+
+/*arrow*/
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  height: 49px;
+  width: 50px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.paragraphs{
+  padding-top: 10%;
 }
