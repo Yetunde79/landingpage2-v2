@@ -22,8 +22,119 @@ html {
   clear: left;
 }
 
-.mc-field-group > div > input {
+.mc-field-group>div>input {
   border: none;
   background-color: #f8f1ee;
   padding: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.rightS {
+  margin-top: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signup>div>h1 {
+  /*Bottom Border with gradient*/
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  /*Text-specific*/
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 400%;
+}
+
+.signup>div>p {
+  padding-top: 50px;
+  font-size: 170%;
+}
+
+/*Bottom bar styles*/
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: none;
+  padding: 5%;
+  margin: 0
+}
+
+
+#footer1 > div {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+#footer1 > img {
+  align-items: flex-start;
+}
+
+
+#shootLogo {
+  width: 50%;
+}
+ 
+span {
+  bottom: 0;
+  position: absolute;
+ 
+}
+
+/*Icons*/
+
+a>i {
+  font-size: 400%;
+  color: black;
+  margin-right: 10px;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+  transition: 0.5s;
+}
+
+.fa-instagram:hover {
+  color: #bc2a8d;
+  transition: 0.5s;
+}
+
+/*List elements*/
+
+ul {
+  list-style-type: none;
+  font-size: 110%;
+}
+
+#bold {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.col-sm>h1 {
+  /*Bottom Border with gradient*/
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  /*Text-specific*/
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.col-sm > h2 {
+  padding: 20px;
+  font-weight: bold;
+}
+
+#follow {
+  text-align: center;
 }
