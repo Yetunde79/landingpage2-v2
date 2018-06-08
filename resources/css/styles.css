@@ -102,40 +102,30 @@ i {
   background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
 }
 
+.photo-img{
+  box-shadow: 2px 2px 15px 2px#d3d3d3;
+}
+
+.third-section{
+  padding-top: 5%;
+}
 .padding-bottom{
   padding-bottom: 5%;
 }
-
-
-.photoarray{
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:row;
-  justify-content:space-around;
-  align-items:stretch;
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#box1 {
-  display: flex;
-  flex-basis: 100%;
-  height: auto;
-  flex-shrink: 1;
-  
+.photo-h2{
+  padding-top: 3%;
+  font-weight: 900;
 }
-
-#box2 {
-  display: flex;
-  flex-basis: 100%;
-  height: auto;
-  flex-shrink: 1;
-}
-
-#box3{
-  display: flex;
-  flex-basis: 100%;
-  height: auto;
-  flex-shrink: 1;
-
+.photo-p{
+  padding-top: 4%;
+  line-height: 0.3;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
