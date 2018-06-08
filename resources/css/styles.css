@@ -53,6 +53,33 @@ html {
   padding-top: 50px;
   font-size: 170%;
 }
+.signup {
+  margin-bottom: 100px;
+}
+
+.mc-field-group > div > input {
+  font-size: 130%;
+}
+
+input:focus {
+  
+}
+
+.btn {
+  background: black;
+  border: 2px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;   
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C); 
+  transition: 0.5s;
+}
+
 
 /*Bottom bar styles*/
 
@@ -137,4 +164,10 @@ ul {
 
 #follow {
   text-align: center;
+}
+
+#rectangle {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
 }
