@@ -102,10 +102,10 @@ i {
   background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
 }
 
-.photocontainer{
-  padding-left: 5%;
-  padding-right: 5%; 
+.padding-bottom{
+  padding-bottom: 5%;
 }
+
 
 .photoarray{
   display:flex;
@@ -141,22 +141,6 @@ i {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-  .photoarray {
-    flex-wrap:nowrap;
-    justify-content: center;
-} 
-
- #box1 {
-     flex-basis:1;
-    
- }
- #box2 {
-     flex-basis:1;
-    
- }
- #box3 {
-     flex-basis:1;   
- }
 
 
 }
@@ -164,21 +148,6 @@ i {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-  .photoarray {
-    flex-wrap:nowrap;
-    justify-content: center;
-} 
-
- #box1 {
-     flex-basis:1;  
-}
- #box2 {
-     flex-basis:1;  
-}
-
- #box3 {
-     flex-basis:1;   
- }
 
 
 }
