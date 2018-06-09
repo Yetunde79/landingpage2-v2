@@ -32,6 +32,9 @@
 	<!--Our stylesheet.-->
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 
+	<!--Our media queries-->
+	<link rel="stylesheet" type="text/css" href="resources/css/styles_mq.css">
+
 	<title>Shoot</title>
 </head>
 
@@ -89,53 +92,80 @@
 		</div>
 	</div>
 	<!--End mc_embed_signup-->
-	<div id="rectangle">
 
-	</div>
+	<!--Gradient bar-->
+	<div id="rectangle"></div>
+
 	<!--Bottom Bar Section-->
 	<footer>
 		<div class="container">
+			<div class="row">
+				<!--Logo and footer-->
+				<div class="col-sm-4" id="footer1">
+					<div>
+						<img src="resources/img/logo-black.png" alt="" id="shootLogo">
+					</div>
 
-			<div class="" id="footer1">
-				<div>
-					<img src="resources/img/logo-black.png" alt="" id="shootLogo">
+					<div id="spanf">
+						<span>&copy Shoot Technology, Inc 2018</span>
+					</div>
 				</div>
 
-				<div>
-					<span>&copy Shoot Technology, Inc 2018</span>
-				</div>
-			</div>
-
-			<div id="social" class="container row">
-				<div class="col-sm">
+				<!--List elements, Company and Business-->
+				<div id="social" class="col-sm-4 d-flex justify-content-end">
 					<ul>
 						<li id="bold">Company</li>
-						<li>About Us</li>
-						<li>Privacy</li>
-						<li>Terms</li>
-						<li>Investors</li>
-						<li>Press Kit</li>
-					</ul>
-					<ul>
-						<li id="bold">Community</li>
-						<li>Welcome</li>
-						<li>Get Started</li>
-						<li>Blog</li>
-					</ul>
+						<a href="">
+							<li>About Us</li>
+						</a>
+						<a href="">
+							<li>Privacy</li>
+						</a>
+						<a href="">
+							<li>Terms</li>
+						</a>
+						<a href="">
+							<li>Investors</li>
+						</a>
+						<a href="">
+							<li>Press Kit</li>
+						</a>
 
+						<li id="bold">Community</li>
+						<a href="">
+							<li>Welcome</li>
+						</a>
+						<a href="">
+							<li>Get Started</li>
+						</a>
+						<a href="">
+							<li>Blog</li>
+						</a>
+					</ul>
 				</div>
-				<div class="col-sm" id="follow">
+
+				<!--Social Media-->
+				<div class="col-sm-4" id="follow">
 					<h1>Follow Us</h1>
 					<h2>@ShootUpdates</h2>
-					<div class="font-awesome">
-						<a href="https://www.instagram.com/shootupdates/?hl=en"><i class="fab fa-instagram"></i></a>
-						<a href="https://twitter.com/ShootUpdates?lang=en"><i class="fab fa-twitter"></i></a>
+					<div class="font-awesome container-fluid row">
+						<div class="col-sm-6">
+							<a href="https://www.instagram.com/shootupdates/?hl=en">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+						<div class="col-sm-6">
+							<a href="https://twitter.com/ShootUpdates?lang=en">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
 					</div>
 
 				</div>
 			</div>
 
 		</div>
+
 	</footer>
 	<!--Scripts-->
 	<!--jquery script-->

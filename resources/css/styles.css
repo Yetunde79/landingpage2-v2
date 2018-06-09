@@ -94,33 +94,23 @@ footer {
 }
 
 
-#footer1 > div {
-  width: auto;
-  height: auto;
-  display: block;
+#spanf {
+  margin-top: 300px;
+  position: absolute
 }
 
-#footer1 > img {
-  align-items: flex-start;
-}
 
 
 #shootLogo {
   width: 50%;
 }
- 
-span {
-  bottom: 0;
-  position: absolute;
- 
-}
+
 
 /*Icons*/
 
 a>i {
   font-size: 400%;
   color: black;
-  margin-right: 10px;
 }
 
 .fa-twitter:hover {
@@ -139,6 +129,16 @@ ul {
   list-style-type: none;
   font-size: 110%;
 }
+a > li {
+  text-decoration: none;
+  color: black;
+}
+
+ul > a:hover {
+  text-decoration: none;
+  color: #c40000;
+}
+
 
 #bold {
   font-weight: bold;
@@ -146,7 +146,7 @@ ul {
   padding-bottom: 15px;
 }
 
-.col-sm>h1 {
+.col-sm-4>h1 {
   /*Bottom Border with gradient*/
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
