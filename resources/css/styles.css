@@ -32,13 +32,7 @@ html {
   display: flex;
 }
 
-.rightS {
-  margin-top: 20%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.signup>div>h1 {
+.col-sm-6>h1 {
   /*Bottom Border with gradient*/
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
@@ -49,37 +43,42 @@ html {
   font-size: 400%;
 }
 
-.signup>div>p {
+.col-sm-6>p {
   padding-top: 50px;
   font-size: 170%;
 }
+
 .signup {
   margin-bottom: 100px;
 }
+#mc_embed_signup {
+  display: flex;
+  align-self: flex-end;
 
-.mc-field-group > div > input {
-  font-size: 130%;
+}
+
+.mc-field-group>div>input {
+  font-size: 200%;
 }
 
 input:focus {
-  
+  outline: none;
 }
 
 .btn {
-  background: black;
+  background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
   border: 2px;
   color: white;
-  padding: 10px;
-  text-align: center;
-  margin-top: 20px;   
-  border-radius: 10px;
-}
-
-.btn:hover {
-  background: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C); 
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px 0px;
+  font-size: 150%;
   transition: 0.5s;
 }
 
+.btn:hover {
+  background-image: black;
+}
 
 /*Bottom bar styles*/
 
@@ -93,18 +92,14 @@ footer {
   margin: 0
 }
 
-
 #spanf {
   margin-top: 300px;
   position: absolute
 }
 
-
-
 #shootLogo {
   width: 50%;
 }
-
 
 /*Icons*/
 
@@ -129,16 +124,16 @@ ul {
   list-style-type: none;
   font-size: 110%;
 }
-a > li {
+
+a>li {
   text-decoration: none;
   color: black;
 }
 
-ul > a:hover {
+ul>a:hover {
   text-decoration: none;
   color: #c40000;
 }
-
 
 #bold {
   font-weight: bold;
@@ -157,7 +152,7 @@ ul > a:hover {
   font-size: 300%;
 }
 
-.col-sm > h2 {
+.col-sm>h2 {
   padding: 20px;
   font-weight: bold;
 }
