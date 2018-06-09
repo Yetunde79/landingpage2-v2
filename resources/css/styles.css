@@ -72,6 +72,9 @@ i {
   width: 50px;
   border-left : none;
   border-top: none;
+  -webkit-border-top: none;
+  -webkit-border-left : none;
+  -webkit-appearance: none;
   border-right: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(45deg, #FDD31C, #F15B22,  #E52127, #DD0C8B);
