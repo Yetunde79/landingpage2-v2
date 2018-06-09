@@ -70,6 +70,8 @@ i {
   display: inline-block;
   height: 49px;
   width: 50px;
+  border-left : none;
+  border-top: none;
   border-right: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(45deg, #FDD31C, #F15B22,  #E52127, #DD0C8B);
