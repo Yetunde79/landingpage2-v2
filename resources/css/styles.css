@@ -17,12 +17,12 @@ html {
   margin: 0px;
   padding: 0px;
 }
-
+/*navbar*/
 nav{
   box-shadow: 5px 5px 5px#C8C8C8;
   background-color: white;
 } 
-/*check out font size relativeness*/
+
 .nav-a{
   font-size: 1em;
 }
@@ -34,8 +34,9 @@ nav{
 #logo {
   width: 60%;
 } 
+/*end*/
 
-.centered{
+.centered{    /*centers item*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,9 +51,9 @@ button {
     background: white;
     border: none;
     border-radius: 12px;
-    color: black; /* make transparent*/
+    color: black; /*make text transparent*/
     font-size: 1.5em;
-    padding:  1% 8%; /*top/b righ/l*/
+    padding:  1% 8%; /*top/b right/l*/
     border-radius: 50px;
 }
 
@@ -62,16 +63,6 @@ button {
 
 .first-section p{
   font-size: 2em; 
-}
-
-.second-section{
-  padding-top: 1.5%;
-}
-
-.second-section p{
-  font-size: 1.6em;
-  font-weight:500;
-  letter-spacing: none;
 }
 
 /*arrow*/
@@ -89,12 +80,23 @@ i {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/*end*/
 
-.paragraphs{
+.second-section{
+  padding-top: 1.5%;
+}
+
+.second-section p{
+  font-size: 1.6em;
+  font-weight:500;
+  letter-spacing: none;
+}
+
+.paragraphs{  /*move div of paragraphs down. For second-section*/
   padding-top: 10%;
 }
 
-#line{
+#line{ /*gradient line in 2nd section*/
   width: 30%;
   display:block;
   border:none;
@@ -109,14 +111,17 @@ i {
 .third-section{
   padding-top: 5%;
 }
+
 .padding-bottom{
   padding-bottom: 5%;
 }
-.row{
+
+.row{ /*removed margin from row of img*/
   margin-left: 0;
   margin-right: 0;
 }
 
+/*font for third section img*/
 .photo-h2{
   padding-top: 3%;
   font-weight: 900;
@@ -127,6 +132,7 @@ i {
   text-align: center;
   font-weight: 500;
 }
+/*end*/
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
