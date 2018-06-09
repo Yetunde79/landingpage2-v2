@@ -51,14 +51,19 @@ html {
 .signup {
   margin-bottom: 100px;
 }
+
 #mc_embed_signup {
   display: flex;
   align-self: flex-end;
+}
 
+#mc_embed_signup input {
+  border-bottom: 2px solid rgb(53, 53, 53);
+  margin-top: 10px;
 }
 
 .mc-field-group>div>input {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 input:focus {
