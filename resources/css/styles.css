@@ -66,6 +66,10 @@ html {
   font-size: 180%;
 }
 
+.mc-field-group {
+  margin-left: 30px;
+}
+
 input:focus {
   outline: none;
 }
@@ -87,14 +91,15 @@ input:focus {
 
 /*Bottom bar styles*/
 
-footer {
-  left: 0;
+#footer {
+  border-top: 100px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1; 
+  position: static;
   bottom: 0;
   width: 100%;
   background: white;
-  border-top: none;
-  padding: 5%;
-  margin: 0
+  padding: 3%;
 }
 
 #spanf {
