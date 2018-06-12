@@ -49,6 +49,7 @@ html {
 }
 
 .signup {
+  padding-top: 5%;
   margin-bottom: 100px;
 }
 
@@ -175,7 +176,7 @@ ul>a:hover {
   width: 100%;
   height: 100px;
   background: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-=======
+}
  
 /*navbar*/
 nav {
@@ -226,7 +227,7 @@ button {
 }
 
 /*arrow*/
-i {
+#down_arrow {
   display: inline-block;
   height: 49px;
   width: 50px;
@@ -297,4 +298,3 @@ i {
 }
 /*end*/
 
-}
