@@ -17,8 +17,168 @@ html {
   margin: 0px;
   padding: 0px;
 }
+
+#mc_embed_signup {
+  clear: left;
+}
+
+.mc-field-group>div>input {
+  border: none;
+  background-color: #f8f1ee;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.col-sm-6>h1 {
+  /*Bottom Border with gradient*/
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  /*Text-specific*/
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 400%;
+}
+
+.col-sm-6>p {
+  padding-top: 50px;
+  font-size: 170%;
+}
+
+.signup {
+  margin-bottom: 100px;
+}
+
+#mc_embed_signup {
+  display: flex;
+  align-self: flex-end;
+}
+
+#mc_embed_signup input {
+  border-bottom: 2px solid rgb(53, 53, 53);
+  margin-top: 10px;
+}
+
+.mc-field-group>div>input {
+  font-size: 180%;
+}
+
+.mc-field-group {
+  margin-left: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border: 2px;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px 0px;
+  font-size: 150%;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-image: black;
+}
+
+/*Bottom bar styles*/
+
+#footer {
+  border-top: 100px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1; 
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  padding: 3%;
+}
+
+#spanf {
+  margin-top: 300px;
+  position: absolute
+}
+
+#shootLogo {
+  width: 50%;
+}
+
+/*Icons*/
+
+a>i {
+  font-size: 400%;
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+  transition: 0.5s;
+}
+
+.fa-instagram:hover {
+  color: #bc2a8d;
+  transition: 0.5s;
+}
+
+/*List elements*/
+
+ul {
+  list-style-type: none;
+  font-size: 110%;
+}
+
+a>li {
+  text-decoration: none;
+  color: black;
+}
+
+ul>a:hover {
+  text-decoration: none;
+  color: #c40000;
+}
+
+#bold {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.col-sm-4>h1 {
+  /*Bottom Border with gradient*/
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  /*Text-specific*/
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.col-sm>h2 {
+  padding: 20px;
+  font-weight: bold;
+}
+
+#follow {
+  text-align: center;
+}
+
+#rectangle {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+=======
+ 
 /*navbar*/
-nav{
+nav {
   box-shadow: 5px 5px 5px#C8C8C8;
   background-color: white;
 } 
@@ -136,30 +296,5 @@ i {
   font-weight: 500;
 }
 /*end*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-
-
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
 
 }

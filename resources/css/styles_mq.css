@@ -1,0 +1,161 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /*Removes follow us from all sizes bellow 1200px*/
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 360px) and (max-width: 480px) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        padding-left: 20px;
+        padding-right: 20px; 
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        padding-left: 10px;
+        padding-right: 10px; 
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
