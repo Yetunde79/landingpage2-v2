@@ -17,3 +17,32 @@ html {
     margin: 0px;
     padding: 0px;
 }
+
+/*navbar*/
+nav {
+    box-shadow: 5px 5px 5px#C8C8C8;
+    background-color: white;
+  } 
+  
+  .nav-a{
+    font-size: 1em;
+  }
+  
+  #navbars{
+    padding-left: 15px;
+  }
+  
+  #logo {
+    width: 60%;
+  } 
+  /*end*/
+
+  #line{  /*make height same as text*/
+    width: 30%;
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 200px;
+    margin: 0px;
+  }
