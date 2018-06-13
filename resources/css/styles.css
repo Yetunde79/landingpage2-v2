@@ -138,6 +138,41 @@ button {
 }
 /*end*/
 
+/*Flickity Slideshow*/
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 300px;
+  height: 400px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+  box-sizing: border-box;
+}
+
+.gallery-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/*Fixiing flickity button*/
+
+.flickity-prev-next-button {
+  padding: 15px;
+}
+
+
 #mc_embed_signup {
   clear: left;
 }
@@ -292,8 +327,3 @@ ul>a:hover {
   text-align: center;
 }
 
-#rectangle {
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-}
