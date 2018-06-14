@@ -42,10 +42,12 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 25px;
 }
 
 .first-section{
   color: white;
+  background-color: #8C8;
 }
 
 button { 
