@@ -17,27 +17,30 @@ html {
   margin: 0px;
   padding: 0px;
 }
- 
+
 /*navbar*/
+
 nav {
   box-shadow: 5px 5px 5px#C8C8C8;
   background-color: white;
-} 
+}
 
-.nav-a{
+.nav-a {
   font-size: 1em;
 }
 
-#navbars{
+#navbars {
   padding-left: 15px;
 }
 
 #logo {
   width: 60%;
-} 
+}
+
 /*end*/
 
-.centered{    /*centers item*/
+.centered {
+  /*centers item*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,40 +48,57 @@ nav {
   padding: 25px;
 }
 
-.first-section{
+.first-section {
   color: white;
   background-color: #8C8;
 }
 
-button { 
-    background: white;
-    border: none;
-    border-radius: 12px;
-    color: black; /*make text transparent*/
-    font-size: 1.5em;
-    padding:  1% 8%; /*top/b right/l*/
-    border-radius: 50px;
+button {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  /*make text transparent*/
+  font-size: 1.5em;
+  padding: 1% 8%;
+  /*top/b right/l*/
+  border-radius: 50px;
 }
 
-.first-section h1{
+.first-section h1 {
   font-size: 4em;
 }
 
-.first-section p{
-  font-size: 2em; 
+.first-section p {
+  font-size: 2em;
+}
+
+.first-section>div>button {
+  font-size: 150%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+}
+
+.first-section>div>button:hover {
+  text-decoration: none;
+  background-color: #c40000;
 }
 
 /*arrow*/
+
 #down_arrow {
   display: inline-block;
   height: 49px;
   width: 50px;
-  border-left : none;
+  border-left: none;
   border-top: none;
   outline: none;
   border-right: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, #FDD31C, #F15B22,  #E52127, #DD0C8B);
+  border-image: linear-gradient(45deg, #FDD31C, #F15B22, #E52127, #DD0C8B);
   border-image-slice: 1;
 }
 
@@ -86,61 +106,74 @@ button {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 /*end*/
 
-.second-section{
+.second-section {
   padding-top: 1.5%;
 }
 
-.second-section p{
+.second-section p {
   font-size: 1.6em;
-  font-weight:500;
+  font-weight: 500;
   letter-spacing: none;
 }
 
-.paragraphs{  /*move div of paragraphs down. For second-section*/
+.paragraphs {
+  /*move div of paragraphs down. For second-section*/
   padding-top: 10%;
 }
 
-#line{ /*gradient line in 2nd section*/
-  width: 30%;
-  display:block;
-  border:none;
-  height:5px;
-  background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+.paragraphs > p {
+  font-size: 200%;
 }
 
-.photo-img{
+#line {
+  /*gradient line in 2nd section*/
+  width: 30%;
+  display: block;
+  border: none;
+  height: 5px;
+  background: linear-gradient(45deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+}
+
+.photo-img {
   box-shadow: 2px 2px 15px 2px#d3d3d3;
 }
 
-.third-section{
-  padding-top: 5%;
+.third-section {
+  padding-top: 1%;
 }
 
-.padding-bottom{
+.padding-bottom {
   padding-bottom: 5%;
 }
 
-.row{ /*removed margin from row of img*/
+.row {
+  /*removed margin from row of img*/
   margin-left: 0;
   margin-right: 0;
 }
 
 /*font for third section img*/
-.photo-h2{
+
+.photo-h2 {
   padding-top: 3%;
   font-weight: 900;
+  font-size: 300%;
 }
-.photo-p{
+
+.photo-p {
   padding-top: 4%;
   line-height: 0.3;
   text-align: center;
   font-weight: 500;
 }
+
 /*end*/
 
 /*********Flickity Slideshow*********/
+
 .gallery {
   background: #EEE;
 }
@@ -159,6 +192,7 @@ button {
 }
 
 /* cell number */
+
 .gallery-cell:before {
   display: block;
   text-align: center;
@@ -180,7 +214,7 @@ button {
   margin-bottom: 50px;
 }
 
-#slidetag > h2 {
+#slidetag>h2 {
   /*Bottom Border with gradient*/
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
@@ -193,6 +227,7 @@ button {
 }
 
 /*********Flickity Slideshow END*********/
+
 #mc_embed_signup {
   clear: left;
 }
@@ -250,7 +285,7 @@ input:focus {
   outline: none;
 }
 
-.btn {
+.mc-field-group>.btn {
   background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
   border: 2px;
   color: white;
@@ -261,7 +296,7 @@ input:focus {
   transition: 0.5s;
 }
 
-.btn:hover {
+.mc-field-group>.btn:hover {
   background-image: black;
 }
 
@@ -270,7 +305,7 @@ input:focus {
 #footer {
   border-top: 100px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1; 
+  border-image-slice: 1;
   position: static;
   bottom: 0;
   width: 100%;
@@ -346,4 +381,3 @@ ul>a:hover {
 #follow {
   text-align: center;
 }
-
