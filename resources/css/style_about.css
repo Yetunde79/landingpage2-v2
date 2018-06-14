@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: #f8f1ee !important;
     padding-top: 100px;
     margin: 0;
     width: 100%;
@@ -37,12 +36,48 @@ nav {
   } 
   /*end*/
 
-  #line{  /*make height same as text*/
-    width: 30%;
+  /*more efficient method to get lines be same width as text*/
+  #line{  
     display:block;
     border:none;
     height:5px;
     background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
     max-width: 200px;
     margin: 0px;
+    border-radius: 5px;
   }
+
+  #line_mission{  
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 190px;
+    margin: 0px;
+    border-radius: 5px;
+  }
+  
+  #line_team{ 
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 152px;
+    margin: 0px;
+    border-radius: 5px;
+  }
+/***/
+
+  .about_para{
+      padding: 3% 0 3% 10%;/*top right bottom left*/
+  }
+
+  img { /*to resize image according to screen*/
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.third_section{
+    padding-top: 5%;
+}
