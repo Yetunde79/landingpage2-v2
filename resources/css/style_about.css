@@ -68,6 +68,13 @@ nav {
   }
 /***/
 
+.centered{    /*centers item*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
   .about_para{
       padding: 3% 0 3% 10%;/*top right bottom left*/
   }
@@ -78,6 +85,14 @@ nav {
     width: auto\9; /* ie8 */
 }
 
+.second_section{
+  padding-top: 10%;
+}
+
 .third_section{
     padding-top: 5%;
+}
+
+.contained{
+  padding: 3%;
 }
