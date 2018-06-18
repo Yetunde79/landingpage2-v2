@@ -27,14 +27,22 @@ nav {
 
 .nav-a {
   font-size: 1em;
+  color: black;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
 #navbars {
   padding-left: 15px;
 }
 
 #logo {
-  width: 60%;
+  width: 110%;
 }
 
 /*end*/
@@ -51,6 +59,7 @@ nav {
 .first-section {
   color: white;
   background-color: #8C8;
+  padding: 50px;
 }
 
 button {
@@ -66,19 +75,19 @@ button {
 }
 
 .first-section h1 {
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .first-section p {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .first-section>div>button {
   font-size: 150%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 55px;
+  padding-right: 55px;
   border-radius: 50px;
 }
 
@@ -113,19 +122,14 @@ button {
   padding-top: 1.5%;
 }
 
-.second-section p {
-  font-size: 1.6em;
-  font-weight: 500;
-  letter-spacing: none;
-}
-
 .paragraphs {
   /*move div of paragraphs down. For second-section*/
   padding-top: 10%;
+  padding-bottom: 5%;
 }
 
 .paragraphs > p {
-  font-size: 200%;
+  font-size: 250%;
 }
 
 #line {
@@ -179,27 +183,24 @@ button {
 }
 
 .gallery-cell {
-  width: 300px;
-  height: 400px;
-  margin-right: 10px;
-  background: #8C8;
+  height: 500px;
+  margin-right: 30px;
+  padding: 50px;
+  display: flex;
+  justify-items: center;
   counter-increment: gallery-cell;
   box-sizing: border-box;
-}
+  border: 10px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;}
 
-.gallery-cell.is-selected {
-  background: #ED2;
-}
+/* .gallery-cell.is-selected {
 
-/* cell number */
+} */
 
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+/* Images inside gallery cell */
+.gallery-cell > img {
+  height: 100%;
 }
 
 /*Fixiing flickity button*/
