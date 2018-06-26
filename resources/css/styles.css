@@ -1,4 +1,12 @@
 /*Sets global styling*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: visible;
+}
 
 * {
   font-family: 'Nunito Sans', sans-serif;
@@ -7,21 +15,12 @@
 
 body {
   background-color: #f8f1ee !important;
-  padding-top: 100px;
-  margin: 0;
-  width: 100%;
-}
-
-html {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+  padding-top: 90px;
 }
 
 /*navbar*/
 
 nav {
-  box-shadow: 5px 5px 5px#C8C8C8;
   background-color: white;
 }
 
@@ -37,6 +36,22 @@ nav {
 .nav-item {
   margin-left: 40px;
 }
+
+.nav-item>button {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.nav-item>button:hover {
+  text-decoration: none;
+  background-color: #F15B22;
+}
+
 #navbars {
   padding-left: 15px;
 }
@@ -53,13 +68,12 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 25px;
+  
 }
 
 .first-section {
-  color: white;
   background-color: #8C8;
-  padding: 50px;
+  padding: 135px;
 }
 
 button {
@@ -82,26 +96,36 @@ button {
   font-size: 3em;
 }
 
-.first-section>div>button {
+.first-section>div>a>button {
   font-size: 150%;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 55px;
-  padding-right: 55px;
-  border-radius: 50px;
+  padding-right: 55px;  
+  border: 2px solid black;
+  border-radius: 10px;
+
 }
 
-.first-section>div>button:hover {
+.first-section>div>a>button:hover {
   text-decoration: none;
-  background-color: #c40000;
+  background-color: #F15B22;
 }
 
-/*arrow*/
+.first-section>div>a>button {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} 
+
+/*arrow in button*/
 
 #down_arrow {
   display: inline-block;
-  height: 49px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
+  margin-left: 5%;
   border-left: none;
   border-top: none;
   outline: none;
@@ -117,10 +141,6 @@ button {
 }
 
 /*end*/
-
-.second-section {
-  padding-top: 1.5%;
-}
 
 .paragraphs {
   /*move div of paragraphs down. For second-section*/
@@ -264,10 +284,6 @@ button {
   margin-bottom: 100px;
 }
 
-#mc_embed_signup {
-  display: flex;
-  align-self: flex-end;
-}
 
 #mc_embed_signup input {
   border-bottom: 2px solid rgb(53, 53, 53);
