@@ -5,7 +5,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow: visible;
+    overflow-x: hidden;
 }
 
 * {
@@ -319,26 +319,27 @@ input:focus {
 
 /*Bottom bar styles*/
 
-#footer {
+footer {
   border-top: 100px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
   border-image-slice: 1;
-  position: static;
-  bottom: 0;
   width: 100%;
+  height: auto;
   background: white;
   padding: 3%;
+  padding-bottom: 0%;
 }
 
-#spanf {
-  margin-top: 300px;
-  position: absolute
-}
 
 #shootLogo {
-  width: 50%;
+  width: 10%;
 }
 
+.mid-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5%;
+}
 /*Icons*/
 
 a>i {
@@ -379,7 +380,15 @@ ul>a:hover {
   padding-bottom: 15px;
 }
 
-.col-sm-4>h1 {
+#footernav {
+padding-right: 5%;
+}
+
+#follow {
+padding-right: 2%;
+}
+
+#follow>h1 {
   /*Bottom Border with gradient*/
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
