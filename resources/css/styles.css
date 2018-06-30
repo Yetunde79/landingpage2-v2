@@ -1,11 +1,12 @@
 /*Sets global styling*/
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 * {
@@ -25,7 +26,7 @@ nav {
 }
 
 .nav-a {
-  font-size: 1em;
+  font-size: 100%;
   color: black;
 }
 
@@ -68,7 +69,6 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 
 .first-section {
@@ -82,18 +82,18 @@ button {
   border-radius: 12px;
   color: black;
   /*make text transparent*/
-  font-size: 1.5em;
+  font-size: 150%;
   padding: 1% 8%;
   /*top/b right/l*/
   border-radius: 50px;
 }
 
 .first-section h1 {
-  font-size: 5em;
+  font-size: 500%;
 }
 
 .first-section p {
-  font-size: 3em;
+  font-size: 300%;
 }
 
 .first-section>div>a>button {
@@ -101,10 +101,9 @@ button {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 55px;
-  padding-right: 55px;  
+  padding-right: 55px;
   border: 2px solid black;
   border-radius: 10px;
-
 }
 
 .first-section>div>a>button:hover {
@@ -117,7 +116,7 @@ button {
   color: inherit;
   padding-top: 5px;
   padding-bottom: 5px;
-} 
+}
 
 /*arrow in button*/
 
@@ -148,7 +147,7 @@ button {
   padding-bottom: 5%;
 }
 
-.paragraphs > p {
+.paragraphs>p {
   font-size: 250%;
 }
 
@@ -205,21 +204,19 @@ button {
 .gallery-cell {
   height: 500px;
   margin-right: 30px;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-items: center;
   counter-increment: gallery-cell;
   box-sizing: border-box;
-  border: 10px solid transparent;
+  border: 5px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1;}
-
-/* .gallery-cell.is-selected {
-
-} */
+  border-image-slice: 1;
+}
 
 /* Images inside gallery cell */
-.gallery-cell > img {
+
+.gallery-cell>img {
   height: 100%;
 }
 
@@ -280,10 +277,9 @@ button {
 }
 
 .signup {
-  padding-top: 5%;
+  padding-top: 10%;
   margin-bottom: 100px;
 }
-
 
 #mc_embed_signup input {
   border-bottom: 2px solid rgb(53, 53, 53);
@@ -292,10 +288,6 @@ button {
 
 .mc-field-group>div>input {
   font-size: 180%;
-}
-
-.mc-field-group {
-  margin-left: 30px;
 }
 
 input:focus {
@@ -330,6 +322,9 @@ footer {
   padding-bottom: 0%;
 }
 
+#footer1 {
+display: block;
+}
 
 #shootLogo {
   width: 10%;
@@ -340,28 +335,13 @@ footer {
   justify-content: flex-end;
   padding-bottom: 5%;
 }
-/*Icons*/
-
-a>i {
-  font-size: 400%;
-  color: black;
-}
-
-.fa-twitter:hover {
-  color: #00aced;
-  transition: 0.5s;
-}
-
-.fa-instagram:hover {
-  color: #bc2a8d;
-  transition: 0.5s;
-}
 
 /*List elements*/
 
 ul {
   list-style-type: none;
   font-size: 110%;
+  padding: 0;
 }
 
 a>li {
@@ -380,12 +360,8 @@ ul>a:hover {
   padding-bottom: 15px;
 }
 
-#footernav {
-padding-right: 5%;
-}
-
 #follow {
-padding-right: 2%;
+  padding-right: 2%;
 }
 
 #follow>h1 {
@@ -394,16 +370,29 @@ padding-right: 2%;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
   border-image-slice: 1;
   /*Text-specific*/
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   font-weight: bold;
   font-size: 300%;
-}
-
-.col-sm>h2 {
-  padding: 20px;
-  font-weight: bold;
 }
 
 #follow {
   text-align: center;
 }
+
+/*Icons*/
+
+/* a>i {
+  margin-top: 10px;
+  font-size: 400%;
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+  transition: 0.5s;
+}
+
+.fa-instagram:hover {
+  color: #bc2a8d;
+  transition: 0.5s;
+} */
