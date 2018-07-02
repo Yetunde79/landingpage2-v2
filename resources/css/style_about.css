@@ -96,3 +96,300 @@ nav {
 .contained{
   padding: 3%;
 }
+
+/*Bottom bar styles*/
+
+footer {
+  border-top: 100px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 3%;
+  padding-bottom: 0%;
+}
+
+#footer1 {
+display: block;
+}
+
+#shootLogo {
+  width: 10%;
+}
+
+.mid-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5%;
+}
+
+/*List elements*/
+
+ul {
+  list-style-type: none;
+  font-size: 110%;
+  padding: 0;
+}
+
+a>li {
+  text-decoration: none;
+  color: black;
+}
+
+ul>a:hover {
+  text-decoration: none;
+  color: #c40000;
+}
+
+#bold {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#follow {
+  padding-right: 2%;
+}
+
+#follow>h1 {
+  /*Bottom Border with gradient*/
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  /*Text-specific*/
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+#follow {
+  text-align: center;
+}
+
+@media (min-width: 1281px) {}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /*Removes follow us from all sizes bellow 1200px*/
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #follow>h1,
+    h2 {
+        display: none;
+    }
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    }
+    /*Reduce font-szie in sign up section*/
+    .col-sm-6>h1 {
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 360px) and (max-width: 480px) {
+
+    /* Navigation Bar */
+    #logo {
+        width: 90%;
+    }
+
+    /* Third Section */
+
+    /* First Section  */
+    .first-section h1 {
+        font-size: 300%;
+      }
+      
+    .first-section p {
+        font-size: 150%;
+    }
+
+    .first-section {
+        padding: 50px;
+    }
+
+    .first-section > div > img {
+        width: 80%;
+    }
+    /* Photographer Gallery */
+    .gallery-cell {
+        height: 400px;
+        padding: 10px;
+    }
+
+
+    /*Sign up section*/
+    .col-sm-6>h1 {
+        padding-left: 20px;
+        padding-right: 20px; 
+        font-size: 300%;
+    }
+    .col-sm-6>p {
+        padding-left: 10px;
+        padding-right: 10px; 
+        font-size: 130%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+
+    .signup {
+        padding-top: 20%;
+        margin-bottom: 100px;
+    }
+
+    .mc-field-group>.btn {
+        margin-top: 30px;
+    }
+      
+
+    /* Footer */
+    footer {
+        border-top: 50px solid transparent;
+
+    }
+
+    #shootLogo {
+        width: 40%;   
+    }
+
+    #footer1 {
+        text-align: center;
+    }
+        
+
+    .mid-footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    div > span {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+/*     
+    #follow>h1,
+    h2 {
+        display: none;
+    }*/
+    
+    /*Align icons after removing above*/
+    #follow>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        margin: 20px;
+    } 
+
+}
