@@ -48,8 +48,10 @@ h2 {
 
 .navbar {
   overflow: hidden;
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -63,7 +65,7 @@ h2 {
 .nav-item>a>button {
   border: 2px solid black;
   border-radius: 10px;
-  color:black;
+  color: black;
   font-size: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -75,13 +77,11 @@ h2 {
   padding-left: 15px;
 }
 
-
 #logo {
   width: 5%;
 }
 
 /*end*/
-
 
 .centerdiv {
   position: absolute;
@@ -97,11 +97,13 @@ h2 {
   justify-content: center;
   text-align: center;
 }
+
 .container-fluid {
   position: relative;
 }
+
 .first-section {
-  background-color:black;
+  background-color: black;
 }
 
 .first-section>#burnreel {
@@ -199,10 +201,8 @@ h2 {
 /*********Flickity Slideshow*********/
 
 .gallery {
-  
   height: 520px;
 }
-
 
 .gallery-cell {
   height: 500px;
@@ -235,7 +235,6 @@ h2 {
   margin-top: -5px;
 }
 
-
 #slidetag {
   display: flex;
   justify-content: center;
@@ -259,7 +258,6 @@ h2 {
 #mc_embed_signup {
   clear: left;
 }
-
 
 .signup {
   padding-top: 10%;
@@ -311,7 +309,7 @@ input:focus {
   outline: none;
 }
 
-.mc-field-group>.btn {
+/* .mc-field-group>.btn {
   background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
   border: 2px;
   color: white;
@@ -324,7 +322,7 @@ input:focus {
 
 .mc-field-group>.btn:hover {
   background-image: black;
-}
+} */
 
 /*Bottom bar styles*/
 
@@ -340,7 +338,7 @@ footer {
 }
 
 #footer1 {
-display: block;
+  display: block;
 }
 
 #shootLogo {
@@ -421,9 +419,7 @@ ul>a:hover {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-
-}
+@media (min-width: 1281px) {}
 
 /* 
     ##Device = Laptops, Desktops
@@ -431,26 +427,25 @@ ul>a:hover {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    /*Removes follow us from all sizes bellow 1200px*/
-
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    }
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
+  /*Removes follow us from all sizes bellow 1200px*/
+  /*Align icons after removing above*/
+  #follow>div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    margin: 20px;
+  }
+  /*Reduce font-szie in sign up section*/
+  .col-sm-6>h1 {
+    font-size: 300%;
+  }
+  .col-sm-6>p {
+    font-size: 130%;
+  }
+  .mc-field-group>div>input {
+    font-size: 120%;
+  }
 }
 
 /* 
@@ -459,17 +454,16 @@ ul>a:hover {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
+  /*Reduce font-szie in sign up section*/
+  .col-sm-6>h1 {
+    font-size: 300%;
+  }
+  .col-sm-6>p {
+    font-size: 130%;
+  }
+  .mc-field-group>div>input {
+    font-size: 120%;
+  }
 }
 
 /* 
@@ -478,40 +472,36 @@ ul>a:hover {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* First Section  */
-    #logo {
-      width: 10%;
+  /* First Section  */
+  #logo {
+    width: 10%;
   }
-  
-    .first-section h1 {
-        font-size: 400%;
-    }
-    .first-section p {
-        font-size: 200%;
-    }
-    
-    .first-section>div>img {
-        width: 100%;
-    }
-
-        /* Footer */
-        footer {
-            border-top: 50px solid transparent;
-        }
-        #shootLogo {
-            width: 30%;
-        }
-    
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
+  .first-section h1 {
+    font-size: 400%;
+  }
+  .first-section p {
+    font-size: 200%;
+  }
+  .first-section>div>img {
+    width: 100%;
+  }
+  /* Footer */
+  footer {
+    border-top: 50px solid transparent;
+  }
+  #shootLogo {
+    width: 30%;
+  }
+  /*Reduce font-szie in sign up section*/
+  .col-sm-6>h1 {
+    font-size: 300%;
+  }
+  .col-sm-6>p {
+    font-size: 130%;
+  }
+  .mc-field-group>div>input {
+    font-size: 120%;
+  }
 }
 
 /* 
@@ -520,39 +510,36 @@ ul>a:hover {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-    /* First Section  */
-    #logo {
-      width: 15%;
+  /* First Section  */
+  #logo {
+    width: 15%;
   }
-  
-    .first-section h1 {
-        font-size: 300%;
-    }
-    .first-section p {
-        font-size: 150%;
-    }
-    
-    .first-section>div>img {
-        width: 80%;
-    }
-    /* Footer */
-    footer {
-        border-top: 50px solid transparent;
-    }
-    #shootLogo {
-        width: 30%;
-    }
-   
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
+  .first-section h1 {
+    font-size: 300%;
+  }
+  .first-section p {
+    font-size: 150%;
+  }
+  .first-section>div>img {
+    width: 80%;
+  }
+  /* Footer */
+  footer {
+    border-top: 50px solid transparent;
+  }
+  #shootLogo {
+    width: 30%;
+  }
+  /*Reduce font-size in sign up section*/
+  .col-sm-6>h1 {
+    font-size: 300%;
+  }
+  .col-sm-6>p {
+    font-size: 130%;
+  }
+  .mc-field-group>div>input {
+    font-size: 120%;
+  }
 }
 
 /* 
@@ -561,80 +548,67 @@ ul>a:hover {
 */
 
 @media (min-width: 360px) and (max-width: 480px) {
-    /* Navigation Bar */
-    #logo {
-        width: 15%;
-    }
-
-    /* First Section  */
-    .first-section h1 {
-        font-size: 300%;
-    }
-    .first-section p {
-        font-size: 150%;
-    }
-    .first-section>div>img {
-        width: 80%;
-    }
-    /* Photographer Gallery */
-    .gallery-cell {
-        height: 400px;
-        padding: 10px;
-    }
-    #slidetag > h2 {
-        font-size: 150%;
-        margin-bottom: 20px;
-    }
-
-    /*Sign up section*/
-    .col-sm-6>h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 200%;
-    }
-    .col-sm-6>p {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 120%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
-    .signup {
-        padding-top: 20%;
-        margin-bottom: 100px;
-    }
-    .mc-field-group>.btn {
-        margin-top: 30px;
-    }
-    
-    /* Footer */
-    footer {
-        border-top: 50px solid transparent;
-    }
-    #shootLogo {
-        width: 40%;
-    }
-    #footer1 {
-        text-align: center;
-    }
-    .mid-footer {
-        justify-content: center;
-        text-align: center;
-    }
-    div>span {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-
-    
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    }
+  /* Navigation Bar */
+  #logo {
+    width: 15%;
+  }
+  /* First Section  */
+  .first-section h1 {
+    font-size: 300%;
+  }
+  .first-section p {
+    font-size: 150%;
+  }
+  .first-section>div>img {
+    width: 80%;
+  }
+  /* Photographer Gallery */
+  .gallery-cell {
+    height: 400px;
+    padding: 10px;
+  }
+  #slidetag>h2 {
+    font-size: 150%;
+    margin-bottom: 20px;
+  }
+  /*Sign up section*/
+  .signup>div>h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 200%;
+  }
+  .signup>div>p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 120%;
+  }
+  .mc-field-group>div>input {
+    font-size: 100%;
+  }
+  #mc_embed_signup input {
+    width: 80%;
+  }
+  .signup {
+    padding-top: 20%;
+    margin-bottom: 100px;
+  }
+  /* Footer */
+  footer {
+    border-top: 50px solid transparent;
+  }
+  #shootLogo {
+    width: 40%;
+  }
+  #footer1 {
+    text-align: center;
+  }
+  .mid-footer {
+    justify-content: center;
+    text-align: center;
+  }
+  div>span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 }
