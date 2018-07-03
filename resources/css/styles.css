@@ -82,6 +82,14 @@ h2 {
 
 /*end*/
 
+
+.centerdiv {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .centered {
   /*centers item*/
   display: flex;
@@ -89,19 +97,24 @@ h2 {
   justify-content: center;
   text-align: center;
 }
-
+.container-fluid {
+  position: relative;
+}
 .first-section {
-  background-color: #8C8;
-  padding: 135px;
+  background-color:black;
 }
 
-
+.first-section>#burnreel {
+  opacity: 0.5;
+}
 
 .first-section h1 {
+  color: white;
   font-size: 500%;
 }
 
 .first-section p {
+  color: white;
   font-size: 300%;
 }
 
@@ -111,7 +124,7 @@ h2 {
   padding-bottom: 5px;
   padding-left: 25px;
   padding-right: 25px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 10px;
   background: transparent;
 }
