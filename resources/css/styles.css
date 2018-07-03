@@ -479,15 +479,17 @@ ul>a:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     /* First Section  */
+    #logo {
+      width: 10%;
+  }
+  
     .first-section h1 {
         font-size: 400%;
     }
     .first-section p {
         font-size: 200%;
     }
-    .first-section {
-        padding: 100px;
-    }
+    
     .first-section>div>img {
         width: 100%;
     }
@@ -519,15 +521,17 @@ ul>a:hover {
 
 @media (min-width: 481px) and (max-width: 767px) {
     /* First Section  */
+    #logo {
+      width: 15%;
+  }
+  
     .first-section h1 {
         font-size: 300%;
     }
     .first-section p {
         font-size: 150%;
     }
-    .first-section {
-        padding: 50px;
-    }
+    
     .first-section>div>img {
         width: 80%;
     }
@@ -559,17 +563,15 @@ ul>a:hover {
 @media (min-width: 360px) and (max-width: 480px) {
     /* Navigation Bar */
     #logo {
-        width: 90%;
+        width: 15%;
     }
+
     /* First Section  */
     .first-section h1 {
         font-size: 300%;
     }
     .first-section p {
         font-size: 150%;
-    }
-    .first-section {
-        padding: 50px;
     }
     .first-section>div>img {
         width: 80%;
@@ -605,6 +607,7 @@ ul>a:hover {
     .mc-field-group>.btn {
         margin-top: 30px;
     }
+    
     /* Footer */
     footer {
         border-top: 50px solid transparent;

@@ -2,76 +2,81 @@
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 * {
-    font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 1.5px;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 body {
-    background-color: #f8f1ee !important;
-    padding-top: 90px;
+  background-color: #f8f1ee !important;
 }
 
 /*navbar*/
 
 nav {
-    background-color: white;
+  background-color: white;
 }
 
 button {
-    background: white;
-    border: none;
-    border-radius: 12px;
-    color: transparent;
-    font-size: 150%;
-    padding: 1% 8%;
-    /*top/b right/l*/
-    border-radius: 50px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  color: transparent;
+  font-size: 150%;
+  padding: 1% 8%;
+  /*top/b right/l*/
+  border-radius: 50px;
 }
 
 h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 300%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 300%;
 }
 
 .nav-a {
-    font-size: 100%;
-    color: black;
+  font-size: 100%;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: black;
+  color: black;
 }
 
 .nav-item {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .nav-item>a>button {
-    border: 2px solid black;
-    border-radius: 10px;
-    color: black;
-    font-size: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color:black;
+  font-size: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #navbars {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 #logo {
-    width: 110%;
+  width: 5%;
 }
 
 /*end*/
@@ -146,3 +151,83 @@ h2 {
     background-image: black;
   }
   
+  /* Media Queries  */
+
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /*Removes follow us from all sizes bellow 1200px*/
+
+    
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 360px) and (max-width: 480px) {
+    /*Sign up section*/
+    .col-sm-6>h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 200%;
+    }
+    .col-sm-6>p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 120%;
+    }
+    .mc-field-group>div>input {
+        font-size: 120%;
+    }
+    .signup {
+        padding-top: 20%;
+        margin-bottom: 100px;
+    }
+    .mc-field-group>.btn {
+        margin-top: 30px;
+    }
+    
+}
