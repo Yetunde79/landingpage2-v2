@@ -24,6 +24,22 @@ body {
 nav {
   background-color: white;
 }
+button {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  color: transparent;
+  font-size: 150%;
+  padding: 1% 8%;
+  /*top/b right/l*/
+  border-radius: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 300%;
+}
 
 .nav-a {
   font-size: 100%;
@@ -38,19 +54,15 @@ nav {
   margin-left: 40px;
 }
 
-.nav-item>button {
+.nav-item>a>button {
   border: 2px solid black;
   border-radius: 10px;
+  color:black;
   font-size: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-.nav-item>button:hover {
-  text-decoration: none;
-  background-color: #F15B22;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #navbars {
@@ -76,17 +88,7 @@ nav {
   padding: 135px;
 }
 
-button {
-  background: white;
-  border: none;
-  border-radius: 12px;
-  color: black;
-  /*make text transparent*/
-  font-size: 150%;
-  padding: 1% 8%;
-  /*top/b right/l*/
-  border-radius: 50px;
-}
+
 
 .first-section h1 {
   font-size: 500%;
@@ -100,10 +102,11 @@ button {
   font-size: 150%;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
   border: 2px solid black;
   border-radius: 10px;
+  background: transparent;
 }
 
 .first-section>div>a>button:hover {
@@ -113,33 +116,10 @@ button {
 
 .first-section>div>a>button {
   text-decoration: none;
-  color: inherit;
+  color: white;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-/*arrow in button*/
-
-#down_arrow {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  margin-left: 5%;
-  border-left: none;
-  border-top: none;
-  outline: none;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, #FDD31C, #F15B22, #E52127, #DD0C8B);
-  border-image-slice: 1;
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-/*end*/
 
 .paragraphs {
   /*move div of paragraphs down. For second-section*/
@@ -153,7 +133,7 @@ button {
 
 #line {
   /*gradient line in 2nd section*/
-  width: 30%;
+  width: 50%;
   display: block;
   border: none;
   height: 5px;
@@ -250,6 +230,15 @@ button {
   clear: left;
 }
 
+
+.signup {
+  padding-top: 10%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .mc-field-group>div>input {
   border: none;
   background-color: #f8f1ee;
@@ -260,7 +249,7 @@ button {
   display: flex;
 }
 
-.col-sm-6>h1 {
+.signup>div>h2 {
   /*Bottom Border with gradient*/
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
@@ -271,23 +260,21 @@ button {
   font-size: 400%;
 }
 
-.col-sm-6>p {
-  padding-top: 50px;
+.signup>div>p {
+  padding-top: 25px;
   font-size: 170%;
 }
 
-.signup {
-  padding-top: 10%;
-  margin-bottom: 100px;
-}
-
 #mc_embed_signup input {
-  border-bottom: 2px solid rgb(53, 53, 53);
+  border: 2px solid rgb(53, 53, 53);
+  border-radius: 50px;
+  text-align: center;
   margin-top: 10px;
+  width: 50%;
 }
 
 .mc-field-group>div>input {
-  font-size: 180%;
+  font-size: 150%;
 }
 
 input:focus {
@@ -298,10 +285,10 @@ input:focus {
   background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
   border: 2px;
   color: white;
-  padding: 15px;
+  padding: 10px;
   margin-top: 20px;
   border-radius: 20px 0px;
-  font-size: 150%;
+  font-size: 120%;
   transition: 0.5s;
 }
 
