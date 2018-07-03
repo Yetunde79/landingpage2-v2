@@ -16,7 +16,6 @@ body {
 
 body {
   background-color: #f8f1ee !important;
-  padding-top: 90px;
 }
 
 /*navbar*/
@@ -24,6 +23,7 @@ body {
 nav {
   background-color: white;
 }
+
 button {
   background: white;
   border: none;
@@ -44,6 +44,12 @@ h2 {
 .nav-a {
   font-size: 100%;
   color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -69,8 +75,9 @@ h2 {
   padding-left: 15px;
 }
 
+
 #logo {
-  width: 110%;
+  width: 5%;
 }
 
 /*end*/
@@ -179,14 +186,17 @@ h2 {
 /*********Flickity Slideshow*********/
 
 .gallery {
-  background: #EEE;
+  
+  height: 520px;
 }
+
 
 .gallery-cell {
   height: 500px;
   padding: 30px;
   display: flex;
   justify-items: center;
+  flex-direction: column;
   counter-increment: gallery-cell;
   box-sizing: border-box;
   /* border: 5px solid black;
@@ -205,6 +215,13 @@ h2 {
 .flickity-prev-next-button {
   padding: 15px;
 }
+
+.photocred {
+  font-size: 120%;
+  padding: 10px;
+  margin-top: -5px;
+}
+
 
 #slidetag {
   display: flex;
