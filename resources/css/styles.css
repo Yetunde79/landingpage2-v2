@@ -73,6 +73,7 @@ h2 {
   padding-right: 15px;
 }
 
+
 #navbars {
   padding-left: 15px;
 }
@@ -133,7 +134,7 @@ h2 {
 
 .first-section>div>a>button:hover {
   text-decoration: none;
-  background-color: #F15B22;
+  background-color: #0000004f;
 }
 
 .first-section>div>a>button {
@@ -231,8 +232,10 @@ h2 {
 
 .photocred {
   font-size: 120%;
-  padding: 10px;
+  padding: 15px;
   margin-top: -5px;
+  font-style: italic;
+  text-align: center;
 }
 
 #slidetag {
@@ -324,7 +327,7 @@ input:focus {
   background-image: black;
 } */
 
-/*Bottom bar styles*/
+/*Footer*/
 
 footer {
   border-top: 100px solid transparent;
@@ -375,25 +378,6 @@ ul>a:hover {
   padding-bottom: 15px;
 }
 
-#follow {
-  padding-right: 2%;
-}
-
-#follow>h1 {
-  /*Bottom Border with gradient*/
-  border-bottom: 5px solid transparent;
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1;
-  /*Text-specific*/
-  padding-bottom: 5px;
-  font-weight: bold;
-  font-size: 300%;
-}
-
-#follow {
-  text-align: center;
-}
-
 /*Icons*/
 
 /* a>i {
@@ -419,7 +403,24 @@ ul>a:hover {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+  .gallery {
+    height: 500px;
+  }
+  /* Photographer Gallery */
+  .gallery-cell {
+    height: 500px;
+    padding: 10px;
+  }
+
+  .gallery-cell>img {
+    height: 450px;
+  }
+
+  .photocred {
+    font-size: 100%;
+  }
+}
 
 /* 
     ##Device = Laptops, Desktops
@@ -427,22 +428,7 @@ ul>a:hover {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /*Removes follow us from all sizes bellow 1200px*/
-  /*Align icons after removing above*/
-  #follow>div {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 20%;
-    margin: 20px;
-  }
-  /*Reduce font-szie in sign up section*/
-  .col-sm-6>h1 {
-    font-size: 300%;
-  }
-  .col-sm-6>p {
-    font-size: 130%;
-  }
+
   .mc-field-group>div>input {
     font-size: 120%;
   }
@@ -454,13 +440,33 @@ ul>a:hover {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*Reduce font-szie in sign up section*/
-  .col-sm-6>h1 {
-    font-size: 300%;
+  /* First Section  */
+  #logo {
+    width: 10%;
   }
-  .col-sm-6>p {
-    font-size: 130%;
+  .centerdiv>h1 {
+    font-size: 400%;
   }
+  .centerdiv> p {
+    font-size: 200%;
+  }
+  .first-section>div>img {
+    width: 100%;
+  }
+
+  .centerdiv {
+    top: 45%;
+    left: 50%;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 50px solid transparent;
+  }
+  #shootLogo {
+    width: 25%;
+  }
+
   .mc-field-group>div>input {
     font-size: 120%;
   }
@@ -485,20 +491,20 @@ ul>a:hover {
   .first-section>div>img {
     width: 100%;
   }
+
+  .centerdiv {
+    top: 20%;
+    left: 50%;
+  }
+
   /* Footer */
   footer {
     border-top: 50px solid transparent;
   }
   #shootLogo {
-    width: 30%;
+    width: 25%;
   }
-  /*Reduce font-szie in sign up section*/
-  .col-sm-6>h1 {
-    font-size: 300%;
-  }
-  .col-sm-6>p {
-    font-size: 130%;
-  }
+
   .mc-field-group>div>input {
     font-size: 120%;
   }
@@ -530,13 +536,7 @@ ul>a:hover {
   #shootLogo {
     width: 30%;
   }
-  /*Reduce font-size in sign up section*/
-  .col-sm-6>h1 {
-    font-size: 300%;
-  }
-  .col-sm-6>p {
-    font-size: 130%;
-  }
+
   .mc-field-group>div>input {
     font-size: 120%;
   }
@@ -546,6 +546,7 @@ ul>a:hover {
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
 */
+
 @media (min-width: 320px) and (max-width: 480px) {
   /* Navigation Bar */
   #logo {
@@ -561,20 +562,50 @@ ul>a:hover {
   .first-section>div>img {
     width: 80%;
   }
+  #burnreel {
+    height: 800px;
+    width: auto;
+  }
+
+  .centerdiv {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .paragraphs {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .paragraphs>p {
+    font-size: 180%;
+  }
+  .gallery {
+    height: 500px;
+  }
   /* Photographer Gallery */
   .gallery-cell {
-    height: 400px;
+    height: 500px;
     padding: 10px;
   }
+
+  .gallery-cell>img {
+    height: 450px;
+  }
+
+  .photocred {
+    font-size: 100%;
+  }
   #slidetag>h2 {
-    font-size: 150%;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
   /*Sign up section*/
   .signup>div>h2 {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 200%;
+    font-size: 250%;
   }
   .signup>div>p {
     padding-left: 10px;
