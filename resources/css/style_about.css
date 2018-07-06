@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: #f8f1ee !important;
     padding-top: 100px;
     margin: 0;
     width: 100%;
@@ -17,3 +16,298 @@ html {
     margin: 0px;
     padding: 0px;
 }
+
+/*navbar*/
+
+nav {
+    background-color: white;
+  }
+  
+  button {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    color: transparent;
+    font-size: 150%;
+    padding: 1% 8%;
+    /*top/b right/l*/
+    border-radius: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+  }
+  
+  .nav-a {
+    font-size: 100%;
+    color: black;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  
+  .nav-item {
+    margin-left: 40px;
+  }
+  
+  .nav-item>a>button {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  #navbars {
+    padding-left: 15px;
+  }
+  
+  
+  #logo {
+    width: 5%;
+  }
+  
+  /*end*/
+
+  /*more efficient method to get lines be same width as text*/
+  #line{  
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 200px;
+    margin: 0px;
+    border-radius: 5px;
+  }
+
+  #line_mission{  
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 190px;
+    margin: 0px;
+    border-radius: 5px;
+  }
+  
+  #line_team{ 
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 152px;
+    margin: 0px;
+    border-radius: 5px;
+  }
+/***/
+
+.centered{    /*centers item*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+  .about_para{
+      padding: 3% 0 3% 10%;/*top right bottom left*/
+  }
+
+  img { /*to resize image according to screen*/
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.second_section{
+  padding-top: 10%;
+}
+
+.third_section{
+    padding-top: 5%;
+}
+
+.contained{
+  padding: 3%;
+}
+
+/*Bottom bar styles*/
+
+footer {
+  border-top: 100px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 3%;
+  padding-bottom: 0%;
+}
+
+#footer1 {
+display: block;
+}
+
+#shootLogo {
+  width: 10%;
+}
+
+.mid-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5%;
+}
+
+/*List elements*/
+
+ul {
+  list-style-type: none;
+  font-size: 110%;
+  padding: 0;
+}
+
+a>li {
+  text-decoration: none;
+  color: black;
+}
+
+ul>a:hover {
+  text-decoration: none;
+  color: #c40000;
+}
+
+#bold {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#follow {
+  padding-right: 2%;
+}
+
+#follow>h1 {
+  /*Bottom Border with gradient*/
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+  border-image-slice: 1;
+  /*Text-specific*/
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+#follow {
+  text-align: center;
+}
+
+/* Media Queries */
+
+  /* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* First Section  */
+    #logo {
+      width: 10%;
+    }
+  
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
+    }
+    #shootLogo {
+      width: 25%;
+    }
+  
+  }
+  
+  /* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* First Section  */
+    #logo {
+      width: 10%;
+    }
+  
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
+    }
+    #shootLogo {
+      width: 25%;
+    }
+  
+  }
+  
+  /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* First Section  */
+    #logo {
+      width: 15%;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
+    }
+    #shootLogo {
+      width: 30%;
+    }
+  
+  }
+  
+  /* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* Navigation Bar */
+    #logo {
+      width: 15%;
+    }
+  
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
+    }
+    #shootLogo {
+      width: 40%;
+    }
+    #footer1 {
+      text-align: center;
+    }
+    .mid-footer {
+      justify-content: center;
+      text-align: center;
+    }
+    div>span {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  }
