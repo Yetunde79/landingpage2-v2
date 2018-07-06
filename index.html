@@ -79,8 +79,8 @@
 			<img src="resources/img/logo-white.png" alt="Shoot Logo White" id="shootlogow">
 			<p>The new way to
 				<br>connect with creatives.</p>
-			<a data-easing="linear" class="js-anchor-link" href="#first">
-				<button class="btn">
+			<a class="js-anchor-link">
+				<button class="btn" id="button">
 					Learn More
 					<i class="fas fa-angle-down"></i>
 				</button>
@@ -92,7 +92,7 @@
 		<div class="paragraphs">
 			<p>Need help finding the perfect photographer, videographer
 				<br> or other creatives for your project?</p>
-			<h2>Shoot has you covered.</h2>
+			<h2 id="learn">Shoot has you covered.</h2>
 			<hr id="line">
 		</div>
 	</div>
@@ -178,7 +178,7 @@
 
 	</div>
 
-	<!--Signup section-->
+		<!--Signup section-->
 	<!-- Begin MailChimp Signup Form -->
 	<div class="container signup">
 		<div>
@@ -267,18 +267,8 @@
 			<span>&copy Shoot Technology, Inc 2018</span>
 		</div>
 	</footer>
-
-	<!--Scripts-->
-	<!--Smooth scroll. Credit to https://github.com/cferdinandi/smooth-scroll-->
-	<!-- Issues with overflow-x:hidden. -->
-	<!-- <script src="resources/script/smooth-scroll.polyfills.min.js"></script>
-		<script>
-			var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
-			var linear = new SmoothScroll('[data-easing="linear"]', {
-				easing: 'linear'
-			});
-		</script> -->
-
+	
+	
 	<!--jquery script-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	    crossorigin="anonymous"></script>
@@ -290,8 +280,10 @@
 	    crossorigin="anonymous"></script>
 	<!--flickity js script-->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<!-- smoothscroll javascript -->
-	<script src="resources/script/anchor-smoothscroll.js"></script>
+	<!--smooth scroll js-->
+	<script src="/resources/script/smooth-scroll.polyfills.min.js"></script>
+	<script src="resources/script/learnmore.js"></script>
+
 
 </body>
 
