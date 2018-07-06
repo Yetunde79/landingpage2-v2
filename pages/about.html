@@ -37,37 +37,39 @@
 
 <body>
 
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
-	
-				<a class="navbar-brand" href="#"><img id="logo" src="../resources/img/shootlogo.png"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button> <!--button for mobile view-->
-				
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-					<ul class="navbar-nav"> <!--list for navbar-->
-	
-						<li class="nav-item">
-							<a class="nav-link nav-a" href="../index.html">Welcome<span class="sr-only">(current)</span></a>
-						</li>
-						
-				
-						<li class="nav-item">
-							<a class="nav-link nav-a" href="#">About Us</a>
-						</li>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-						<li class="nav-item">
-								<a class="nav-link nav-a" href="#">Get Started</a>
-						</li>
-				
-						<li class="nav-item">
-							<a class="nav-link nav-a" href="../pages/presskit.html">Press Kit</a>
-						</li>
-					</ul>
-				</div>
-			
-		</nav>
+		<img id="logo" src="/resources/img/shootlogo.png">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+		    aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--button for mobile view-->
 
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<!--list for navbar-->
+
+				<li class="nav-item">
+					<a class="nav-link nav-a" href="/index.html">Welcome
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link nav-a" href="/pages/about.html">About Us</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="/signup.html">
+						<button class="btn">Sign Up</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
 		
 
 		<div class="container">
@@ -103,49 +105,66 @@
 				</div>-->
 
 				<div class="fifth_section centered">
-					<img src="../resources/img/Asset 1.png" alt="Signature">
+					<img src="/resources/img/Asset 1.png" alt="Signature">
 				</div>
 		</div>
 	</div>
 
 		<!--Footer Section-->
-		<footer>
-			<!--Logo and footer-->
-	
-			<div id="footer1">
-				<img src="/resources/img/logo-black.png" alt="Shoot Logo" id="shootLogo">
-			</div>
-	
-			<!--List elements, Company and Business-->
-			<div class="mid-footer">
-				<div id="footernav">
-					<ul>
-						<li id="bold">Navigation</li>
-						<a href="">
-							<li>Welcome</li>
-						</a>
-						<a href="">
-							<li>About Us</li>
-						</a>
-						<a href="">
-							<li>Privacy</li>
-						</a>
-						<a href="">
-							<li>Terms</li>
-						</a>
-						<a href="">
-							<li>Blog</li>
-						</a>
-					</ul>
-				</div>
-	
-			</div>
-	
-			<div>
-				<span>&copy Shoot Technology, Inc 2018</span>
-			</div>
-		</footer>
+	<footer>
+		<!--Logo and footer-->
 
+		<div id="footer1">
+			<img src="/resources/img/logo-black.png" alt="Shoot Logo" id="shootLogo">
+		</div>
+
+		<!--List elements, Company and Business-->
+		<div class="mid-footer">
+			<div id="footernav">
+				<ul>
+					<li id="bold">Navigation</li>
+					<a href="/index.html">
+						<li>Welcome</li>
+					</a>
+					<a href="/pages/about.html">
+						<li>About Us</li>
+					</a>
+					<a href="/comingsoon.html">
+						<li>Privacy</li>
+					</a>
+					<a href="/comingsoon.html">
+						<li>Terms</li>
+					</a>
+					<a href="https://medium.com/shootmagazine" target="_blank">
+						<li>Blog</li>
+					</a>
+				</ul>
+			</div>
+
+			<!--Social Media-->
+			<!-- <div id="follow">
+				<h1>Follow Us</h1>
+				<div class="font-awesome container-fluid row">
+					<div class="col-sm-6">
+						<a href="https://www.instagram.com/shootupdates/?hl=en">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+					<div class="col-sm-6">
+						<a href="https://twitter.com/ShootUpdates?lang=en">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+				</div>
+
+			</div> -->
+
+		</div>
+
+		<div>
+			<span>&copy Shoot Technology, Inc 2018</span>
+		</div>
+	</footer>
 
 	<!-- Flickity JavaScript CDN -->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

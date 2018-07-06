@@ -18,22 +18,70 @@ html {
 }
 
 /*navbar*/
+
 nav {
-    box-shadow: 5px 5px 5px#C8C8C8;
     background-color: white;
-  } 
-  
-  .nav-a{
-    font-size: 1em;
   }
   
-  #navbars{
+  button {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    color: transparent;
+    font-size: 150%;
+    padding: 1% 8%;
+    /*top/b right/l*/
+    border-radius: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+  }
+  
+  .nav-a {
+    font-size: 100%;
+    color: black;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  
+  .nav-item {
+    margin-left: 40px;
+  }
+  
+  .nav-item>a>button {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  #navbars {
     padding-left: 15px;
   }
   
+  
   #logo {
-    width: 60%;
-  } 
+    width: 5%;
+  }
+  
   /*end*/
 
   /*more efficient method to get lines be same width as text*/
@@ -167,229 +215,99 @@ ul>a:hover {
   text-align: center;
 }
 
-@media (min-width: 1281px) {}
+/* Media Queries */
 
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /*Removes follow us from all sizes bellow 1200px*/
-    #follow>h1,
-    h2 {
-        display: none;
-    }
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    }
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
-}
-
-/* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    #follow>h1,
-    h2 {
-        display: none;
-    }
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    }
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
-}
-
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #follow>h1,
-    h2 {
-        display: none;
-    }
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    }
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
-}
-
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-    #follow>h1,
-    h2 {
-        display: none;
-    }
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    }
-    /*Reduce font-szie in sign up section*/
-    .col-sm-6>h1 {
-        font-size: 300%;
-    }
-    .col-sm-6>p {
-        font-size: 130%;
-    }
-    .mc-field-group>div>input {
-        font-size: 120%;
-    }
-}
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 360px) and (max-width: 480px) {
-
-    /* Navigation Bar */
-    #logo {
-        width: 90%;
-    }
-
-    /* Third Section */
-
+  /* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
     /* First Section  */
-    .first-section h1 {
-        font-size: 300%;
-      }
-      
-    .first-section p {
-        font-size: 150%;
+    #logo {
+      width: 10%;
     }
-
-    .first-section {
-        padding: 50px;
+  
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
     }
-
-    .first-section > div > img {
-        width: 80%;
+    #shootLogo {
+      width: 25%;
     }
-    /* Photographer Gallery */
-    .gallery-cell {
-        height: 400px;
-        padding: 10px;
+  
+  }
+  
+  /* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* First Section  */
+    #logo {
+      width: 10%;
     }
-
-
-    /*Sign up section*/
-    .col-sm-6>h1 {
-        padding-left: 20px;
-        padding-right: 20px; 
-        font-size: 300%;
+  
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
     }
-    .col-sm-6>p {
-        padding-left: 10px;
-        padding-right: 10px; 
-        font-size: 130%;
+    #shootLogo {
+      width: 25%;
     }
-    .mc-field-group>div>input {
-        font-size: 120%;
+  
+  }
+  
+  /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* First Section  */
+    #logo {
+      width: 15%;
     }
-
-    .signup {
-        padding-top: 20%;
-        margin-bottom: 100px;
-    }
-
-    .mc-field-group>.btn {
-        margin-top: 30px;
-    }
-      
 
     /* Footer */
     footer {
-        border-top: 50px solid transparent;
-
+      border-top: 50px solid transparent;
     }
-
     #shootLogo {
-        width: 40%;   
+      width: 30%;
     }
-
+  
+  }
+  
+  /* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* Navigation Bar */
+    #logo {
+      width: 15%;
+    }
+  
+    /* Footer */
+    footer {
+      border-top: 50px solid transparent;
+    }
+    #shootLogo {
+      width: 40%;
+    }
     #footer1 {
-        text-align: center;
+      text-align: center;
     }
-        
-
     .mid-footer {
-        justify-content: center;
-        text-align: center;
+      justify-content: center;
+      text-align: center;
     }
-
-    div > span {
-        display: flex;
-        text-align: center;
-        justify-content: center;
+    div>span {
+      display: flex;
+      text-align: center;
+      justify-content: center;
     }
-/*     
-    #follow>h1,
-    h2 {
-        display: none;
-    }*/
-    
-    /*Align icons after removing above*/
-    #follow>div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        margin: 20px;
-    } 
-
-}
+  }
