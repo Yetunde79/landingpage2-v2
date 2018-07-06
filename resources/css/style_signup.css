@@ -1,0 +1,347 @@
+/*Sets global styling*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+body {
+    background-color: #f8f1ee !important;
+}
+
+/*navbar*/
+
+nav {
+    background-color: white;
+}
+
+button {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    color: transparent;
+    font-size: 150%;
+    padding: 1% 8%;
+    /*top/b right/l*/
+    border-radius: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.nav-a {
+    font-size: 100%;
+    color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+.nav-item>a>button {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#navbars {
+    padding-left: 15px;
+}
+
+#logo {
+    width: 5%;
+}
+
+/*end*/
+
+#mc_embed_signup {
+    clear: left;
+}
+
+.signup {
+    padding-top: 15%;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mc-field-group>div>input {
+    border: none;
+    background-color: #f8f1ee;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.signup>div>h2 {
+    /*Bottom Border with gradient*/
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+    border-image-slice: 1;
+    /*Text-specific*/
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 400%;
+}
+
+.signup>div>p {
+    padding-top: 25px;
+    font-size: 170%;
+}
+
+#mc_embed_signup input {
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.mc-field-group>div>input {
+    font-size: 150%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.mc-field-group>.btn {
+    background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+    border: 2px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px 0px;
+    font-size: 120%;
+    transition: 0.5s;
+}
+
+.mc-field-group>.btn:hover {
+    background-image: black;
+}
+
+/*Footer*/
+
+footer {
+    border-top: 100px solid transparent;
+    border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+    border-image-slice: 1;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 3%;
+    padding-bottom: 0%;
+}
+
+#footer1 {
+    display: block;
+}
+
+#shootLogo {
+    width: 10%;
+}
+
+.mid-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+}
+
+/*List elements*/
+
+ul {
+    list-style-type: none;
+    font-size: 110%;
+    padding: 0;
+}
+
+a>li {
+    text-decoration: none;
+    color: black;
+}
+
+ul>a:hover {
+    text-decoration: none;
+    color: #c40000;
+}
+
+#bold {
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* Media Queries  */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Navigation Bar */
+    #logo {
+        width: 15%;
+    }
+    /*Sign up section*/
+    .signup>div>h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 300%;
+    }
+    .signup>div>p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 150%;
+    }
+    .mc-field-group>div>input {
+        font-size: 100%;
+    }
+    #mc_embed_signup input {
+        width: 80%;
+    }
+    .signup {
+        padding-top: 20%;
+        margin-bottom: 100px;
+    }
+    /* Footer */
+    footer {
+        border-top: 50px solid transparent;
+    }
+    #shootLogo {
+        width: 20%;
+    }
+    #footer1 {
+        text-align: center;
+    }
+    .mid-footer {
+        justify-content: center;
+        text-align: center;
+    }
+    div>span {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Navigation Bar */
+    #logo {
+        width: 15%;
+    }
+    /*Sign up section*/
+    .signup>div>h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 200%;
+    }
+    .signup>div>p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 120%;
+    }
+    .mc-field-group>div>input {
+        font-size: 80%;
+    }
+    #mc_embed_signup input {
+        width: 80%;
+    }
+    .signup {
+        padding-top: 30%;
+        margin-bottom: 100px;
+    }
+
+    /* Footer */
+    footer {
+        border-top: 50px solid transparent;
+        position: absolute;
+    }
+    #shootLogo {
+        width: 40%;
+    }
+    #footer1 {
+        text-align: center;
+    }
+    .mid-footer {
+        justify-content: center;
+        text-align: center;
+    }
+    div>span {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
