@@ -407,9 +407,6 @@ ul>a:hover {
     height: 450px;
   }
 
-  .photocred {
-    font-size: 100%;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
