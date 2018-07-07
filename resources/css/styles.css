@@ -202,27 +202,25 @@ h2 {
 
 /*********Flickity Slideshow*********/
 
-.gallery {
+.carousel {
   height: 520px;
 }
 
 .gallery-cell {
   height: 500px;
-  padding: 30px;
+  padding-bottom: 50px;
   display: flex;
   justify-items: center;
   flex-direction: column;
-  counter-increment: gallery-cell;
   box-sizing: border-box;
-  /* border: 5px solid black;
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1; */
 }
 
 /* Images inside gallery cell */
 
 .gallery-cell>img {
   height: 100%;
+  margin-right: 20px;
+  width: auto;
 }
 
 /*Fixiing flickity button*/
@@ -231,14 +229,11 @@ h2 {
   padding: 15px;
 }
 
-.photocred {
-  font-size: 120%;
-  padding: 15px;
-  margin-top: -5px;
+figcaption{
+  font-size: 100%;
+  padding: 5px;
   font-style: italic;
-  text-align: center;
 }
-
 #slidetag {
   display: flex;
   justify-content: center;
@@ -397,15 +392,9 @@ ul>a:hover {
   transition: 0.5s;
 } */
 
-/* Media Queries */
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
+ 
 @media (min-width: 1281px) {
-  .gallery {
+  .carousel {
     height: 500px;
   }
   /* Photographer Gallery */
@@ -423,22 +412,12 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-
 @media (min-width: 1025px) and (max-width: 1280px) {
 
   .mc-field-group>div>input {
     font-size: 120%;
   }
 }
-
-/* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* First Section  */
@@ -473,10 +452,6 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* First Section  */
@@ -511,10 +486,6 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-*/
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* First Section  */
@@ -543,10 +514,6 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* Navigation Bar */
@@ -582,7 +549,7 @@ ul>a:hover {
   .paragraphs>p {
     font-size: 180%;
   }
-  .gallery {
+  .carousel {
     height: 500px;
   }
   /* Photographer Gallery */
@@ -595,9 +562,6 @@ ul>a:hover {
     height: 450px;
   }
 
-  .photocred {
-    font-size: 100%;
-  }
   #slidetag>h2 {
     margin-top: 50px;
     margin-bottom: 20px;

@@ -70,7 +70,6 @@
 		</div>
 
 	</nav>
-
 	<div class="first-section container-fluid centered">
 		<img src="resources/img/burnreel.JPG" alt="Burn Reel" id="burnreel">
 
@@ -92,13 +91,13 @@
 		<div class="paragraphs">
 			<p>Need help finding the perfect photographer, videographer
 				<br> or other creatives for your project?</p>
-			<h2 id="learn">Shoot has you covered.</h2>
+			<h2>Shoot has you covered.</h2>
 			<hr id="line">
 		</div>
 	</div>
 
 
-	<div class="third-section">
+	<div class="third-section" id="learn">
 		<div class="row centered" id="row">
 			<div class="col-lg-4 col-sm-12 padding-bottom">
 				<img src="resources/img/Connect-Illustration.png" class="photo-img">
@@ -140,40 +139,54 @@
 	<div class="container" id="slidetag">
 		<h2>Who is already loving Shoot?</h2>
 	</div>
-	<div class="container-fluid">
+	
+	<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+		<figure>
+			<div class="gallery-cell">
+				<img src="resources/img/alexmolina1.jpg" alt="Alex Molina">
+				<figcaption>By Alex Molina</figcaption>
+				<figcaption></figcaption>	
+			</div>
+		</figure>
 
-		<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+		<figure>
+			<div class="gallery-cell">
+				<img src="resources/img/angie2.jpg" alt="Angie Duong">
+				<figcaption>By Angie Duong</figcaption>	
+			</div>
+		</figure>
 
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/johncastro1.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by John Castro</p>
-				</div>
+				<img src="resources/img/xdie1.jpg" alt="Mike Phung">
+				<figcaption>By Mike Phung</figcaption>	
 			</div>
+		</figure>
+		
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/angie2.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by Angie Duong</p>
-				</div>
+				<img src="resources/img/emilyzun1.JPG" alt="Emily Zuniga">
+				<figcaption>By Emily Zuniga</figcaption>	
 			</div>
+		</figure>
+		
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/emilyzun1.JPG" alt="">
-				<div class="photocred">
-					<p>Photograph by Emily Zuniga</p>
-				</div>
+				<img src="resources/img/pariah1.JPG" alt="Visual Pariah">
+				<figcaption>By Visual Pariah</figcaption>	
 			</div>
-			
+		</figure>
+		
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/alexmolina1.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by Alex Molina</p>
-				</div>
+				<img src="resources/img/jordan1.JPG" alt="Jordan Bernard">
+				<figcaption>By Jordan Bernard</figcaption>	
 			</div>
-		</div>
+		</figure>
 
 	</div>
 
-		<!--Signup section-->
+	<!--Signup section-->
 	<!-- Begin MailChimp Signup Form -->
 	<div class="container signup">
 		<div>
@@ -262,8 +275,8 @@
 			<span>&copy Shoot Technology, Inc 2018</span>
 		</div>
 	</footer>
-	
-	
+
+
 	<!--jquery script-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	    crossorigin="anonymous"></script>
@@ -276,9 +289,8 @@
 	<!--flickity js script-->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<!--smooth scroll js-->
-	<script src="/resources/script/smooth-scroll.polyfills.min.js"></script>
+	<script src="resources/script/smooth-scroll.polyfills.min.js"></script>
 	<script src="resources/script/learnmore.js"></script>
-
 
 </body>
 
