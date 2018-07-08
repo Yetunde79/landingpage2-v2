@@ -6,7 +6,6 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
- 
 }
 
 * {
@@ -38,7 +37,7 @@ button {
 h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 300%;
+  font-size: 250%;
 }
 
 .nav-a {
@@ -86,7 +85,7 @@ h2 {
 
 .centerdiv {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -101,6 +100,8 @@ h2 {
 
 .container-fluid {
   position: relative;
+  padding-right:0px;
+  padding-left:0px;
 }
 
 .first-section {
@@ -108,6 +109,8 @@ h2 {
 }
 
 .first-section>#burnreel {
+  padding-top: 55px;
+  max-width: 100%;
   opacity: 0.5;
 }
 
@@ -140,13 +143,11 @@ h2 {
 .first-section>div>a>button {
   text-decoration: none;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .paragraphs {
   /*move div of paragraphs down. For second-section*/
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -192,7 +193,7 @@ h2 {
 .photo-p {
   padding-top: 4%;
   line-height: 0.3;
-  font-size: 120%;
+  font-size: 100%;
   text-align: center;
   font-weight: 500;
 }
@@ -201,27 +202,26 @@ h2 {
 
 /*********Flickity Slideshow*********/
 
-.gallery {
+.carousel {
   height: 520px;
 }
 
 .gallery-cell {
   height: 500px;
-  padding: 30px;
+  padding-bottom: 50px;
   display: flex;
   justify-items: center;
   flex-direction: column;
-  counter-increment: gallery-cell;
   box-sizing: border-box;
-  /* border: 5px solid black;
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1; */
 }
 
 /* Images inside gallery cell */
 
 .gallery-cell>img {
   height: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: auto;
 }
 
 /*Fixiing flickity button*/
@@ -230,14 +230,12 @@ h2 {
   padding: 15px;
 }
 
-.photocred {
-  font-size: 120%;
-  padding: 15px;
-  margin-top: -5px;
+figcaption{
+  font-size: 100%;
+  padding: 5px;
   font-style: italic;
   text-align: center;
 }
-
 #slidetag {
   display: flex;
   justify-content: center;
@@ -396,15 +394,19 @@ ul>a:hover {
   transition: 0.5s;
 } */
 
-/* Media Queries */
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
+ 
 @media (min-width: 1281px) {
-  .gallery {
+
+
+  .centerdiv {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .carousel {
     height: 500px;
   }
   /* Photographer Gallery */
@@ -417,27 +419,25 @@ ul>a:hover {
     height: 450px;
   }
 
-  .photocred {
-    font-size: 100%;
-  }
 }
 
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-
 @media (min-width: 1025px) and (max-width: 1280px) {
+
+  .centerdiv {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .first-section>div>img {
+    width: 100%;
+  }
 
   .mc-field-group>div>input {
     font-size: 120%;
   }
 }
-
-/* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* First Section  */
@@ -454,8 +454,12 @@ ul>a:hover {
     width: 100%;
   }
 
+  #burnreel {
+    max-width: 100%;
+  }
+
   .centerdiv {
-    top: 45%;
+    top: 55%;
     left: 50%;
   }
 
@@ -472,10 +476,6 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* First Section  */
@@ -492,11 +492,6 @@ ul>a:hover {
     width: 100%;
   }
 
-  .centerdiv {
-    top: 20%;
-    left: 50%;
-  }
-
   /* Footer */
   footer {
     border-top: 50px solid transparent;
@@ -510,10 +505,6 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-*/
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* First Section  */
@@ -521,14 +512,32 @@ ul>a:hover {
     width: 15%;
   }
   .first-section h1 {
-    font-size: 300%;
+    font-size: 250%;
   }
   .first-section p {
-    font-size: 150%;
+    font-size: 120%;
   }
   .first-section>div>img {
     width: 80%;
   }
+
+  #burnreel {
+    max-width: 100%;
+  }
+
+  .centerdiv {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .first-section>div>a>button{
+    font-size: 120%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   /* Footer */
   footer {
     border-top: 50px solid transparent;
@@ -542,10 +551,6 @@ ul>a:hover {
   }
 }
 
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* Navigation Bar */
@@ -554,22 +559,27 @@ ul>a:hover {
   }
   /* First Section  */
   .first-section h1 {
-    font-size: 300%;
+    font-size: 150%;
   }
   .first-section p {
-    font-size: 150%;
+    font-size: 100%;
   }
   .first-section>div>img {
     width: 80%;
   }
+
+  .first-section>div>a>button{
+    font-size: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   #burnreel {
-    height: 800px;
-    width: auto;
+    max-width: 100%;
   }
 
   .centerdiv {
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -581,7 +591,7 @@ ul>a:hover {
   .paragraphs>p {
     font-size: 180%;
   }
-  .gallery {
+  .carousel {
     height: 500px;
   }
   /* Photographer Gallery */
@@ -594,9 +604,6 @@ ul>a:hover {
     height: 450px;
   }
 
-  .photocred {
-    font-size: 100%;
-  }
   #slidetag>h2 {
     margin-top: 50px;
     margin-bottom: 20px;
