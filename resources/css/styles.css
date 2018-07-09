@@ -257,18 +257,12 @@ figcaption {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 #slidetag>h2 {
   /*Bottom Border with gradient*/
-  border-bottom: 5px solid transparent;
-  -o-border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1;
   /*Text-specific*/
   text-align: center;
-  padding-bottom: 25px;
   font-weight: bold;
   font-size: 300%;
 }
@@ -305,13 +299,8 @@ figcaption {
 }
 
 .signup>div>h2 {
-  /*Bottom Border with gradient*/
-  border-bottom: 5px solid transparent;
-  -o-border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1;
+
   /*Text-specific*/
-  padding-bottom: 25px;
   font-weight: bold;
   font-size: 400%;
 }
