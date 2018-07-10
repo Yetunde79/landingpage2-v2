@@ -220,6 +220,16 @@ ul>a:hover {
     padding-bottom: 15px;
 }
 
+div>span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 /* Media Queries  */
 
 /* 

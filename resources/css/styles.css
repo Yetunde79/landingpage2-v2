@@ -13,7 +13,6 @@ body {
   letter-spacing: 1.5px;
 }
 
-
 body {
   background-color: #f8f1ee !important;
 }
@@ -73,7 +72,7 @@ h2 {
   padding-right: 15px;
 }
 
-.navbar > .container-fluid {
+.navbar>.container-fluid {
   padding: 0;
 }
 
@@ -400,6 +399,16 @@ ul>a:hover {
   font-weight: bold;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+div>span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*Icons*/
