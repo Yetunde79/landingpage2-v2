@@ -72,8 +72,7 @@ h2 {
   padding-right: 15px;
 }
 
-.navbar>.container-fluid {
-  padding: 0;
+.navbar #logolink {
 }
 
 #navbars {
@@ -119,7 +118,7 @@ h2 {
 }
 
 .first-section>#burnreel {
-  background-size: cover;
+  background-size: contain;
   padding-top: 55px;
   max-width: 100%;
   opacity: 0.5;
