@@ -412,6 +412,10 @@ div>span {
   justify-content: center;
 }
 
+#issue-contact {
+  padding-bottom: 30px;
+}
+
 /*Icons*/
 
 /* a>i {
