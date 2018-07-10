@@ -40,6 +40,11 @@ h2 {
   font-size: 250%;
 }
 
+#navdiv {
+  display: flex;
+}
+
+
 .nav-a {
   font-size: 100%;
   color: black;
@@ -72,9 +77,14 @@ h2 {
   padding-right: 15px;
 }
 
-.navbar #logolink {
-  width: auto;
-  text-decoration: none;
+#logolink {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#items {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #logo {
