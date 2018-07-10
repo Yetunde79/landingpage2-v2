@@ -73,14 +73,16 @@ h2 {
 }
 
 .navbar #logolink {
-}
-
-#navbars {
-  padding-left: 15px;
+  width: auto;
+  text-decoration: none;
 }
 
 #logo {
   width: 5%;
+}
+
+#navbars {
+  padding-left: 15px;
 }
 
 /*end*/
@@ -427,6 +429,16 @@ div>span {
   color: #bc2a8d;
   transition: 0.5s;
 } */
+
+@media (min-width: 1920px) {
+  .centerdiv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
 
 @media (min-width: 1281px) {
   .centerdiv {
