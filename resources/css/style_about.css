@@ -76,10 +76,6 @@ h2 {
   padding-left: 15px;
 }
 
-#logo {
-  width: 5%;
-}
-
 /*end*/
 
 /*more efficient method to get lines be same width as text*/
@@ -240,10 +236,7 @@ div>span {
   */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* First Section  */
-  #logo {
-    width: 10%;
-  }
+
   /* Footer */
   footer {
     border-top: 50px solid transparent;
@@ -278,9 +271,7 @@ div>span {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* First Section  */
-  #logo {
-    width: 10%;
-  }
+
   /* Footer */
   footer {
     border-top: 50px solid transparent;
@@ -315,9 +306,7 @@ div>span {
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* First Section  */
-  #logo {
-    width: 15%;
-  }
+
   /* Footer */
   footer {
     border-top: 50px solid transparent;
@@ -352,9 +341,7 @@ div>span {
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* Navigation Bar */
-  #logo {
-    width: 15%;
-  }
+
   /* Footer */
   footer {
     border-top: 50px solid transparent;
