@@ -41,6 +41,14 @@ h2 {
     font-size: 300%;
 }
 
+#line {
+    width: 50%;
+    display: block;
+    border: none;
+    height: 5px;
+    background: linear-gradient(45deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+}
+
 .nav-a {
     font-size: 100%;
     color: black;
@@ -90,7 +98,12 @@ h2 {
 .signup {
     padding-top: 15%;
     margin-bottom: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 }
@@ -102,14 +115,12 @@ h2 {
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .signup>div>h2 {
-    /*Bottom Border with gradient*/
-    border-bottom: 5px solid transparent;
-    border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-    border-image-slice: 1;
     /*Text-specific*/
     padding-bottom: 25px;
     font-weight: bold;
@@ -145,6 +156,7 @@ input:focus {
     margin-top: 20px;
     border-radius: 20px 0px;
     font-size: 120%;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -156,6 +168,7 @@ input:focus {
 
 footer {
     border-top: 100px solid transparent;
+    -o-border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
     border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
     border-image-slice: 1;
     width: 100%;
@@ -174,7 +187,11 @@ footer {
 }
 
 .mid-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-bottom: 5%;
 }
@@ -203,6 +220,15 @@ ul>a:hover {
     padding-bottom: 15px;
 }
 
+div>span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
 
 /* Media Queries  */
 
@@ -218,27 +244,21 @@ ul>a:hover {
     ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -282,12 +302,18 @@ ul>a:hover {
         text-align: center;
     }
     .mid-footer {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         text-align: center;
     }
     div>span {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
@@ -323,7 +349,6 @@ ul>a:hover {
         padding-top: 30%;
         margin-bottom: 100px;
     }
-
     /* Footer */
     footer {
         border-top: 50px solid transparent;
@@ -336,12 +361,18 @@ ul>a:hover {
         text-align: center;
     }
     .mid-footer {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         text-align: center;
     }
     div>span {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }

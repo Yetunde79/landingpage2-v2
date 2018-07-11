@@ -4,7 +4,7 @@ var toggle = document.querySelector('#learn');
 
 
 button.addEventListener("click", function(){
-    var options = { speed: 3500, easing: 'easeOutCubic' };
+    var options = { speed: 1000, easing: 'easeOutCubic' };
     scroll.animateScroll(button, toggle, options);
 });
 

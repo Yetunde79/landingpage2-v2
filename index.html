@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#F15B22">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 	<!--Favicons-->
 	<link rel="apple-touch-icon" sizes="180x180" href="resources/ico/apple-touch-icon.png">
@@ -32,6 +33,9 @@
 	<!--Our stylesheet.-->
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 
+	<!-- Normalize.css -->
+	<link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+
 	<title>Shoot</title>
 </head>
 
@@ -39,7 +43,12 @@
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-		<img id="logo" src="resources/img/shootlogo.png">
+		<div id="logolink">
+			<a href="index.html">
+				<img id="logo" src="resources/img/shootlogo.png">
+			</a>
+		</div>
+		<!-- <img id="logo" src="resources/img/shootlogo.png"> -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
 		    aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -58,7 +67,7 @@
 
 
 				<li class="nav-item">
-					<a class="nav-link nav-a" href="pages/about.html">About Us</a>
+					<a class="nav-link nav-a" href="about.html">About Us</a>
 				</li>
 
 				<li class="nav-item">
@@ -70,7 +79,6 @@
 		</div>
 
 	</nav>
-
 	<div class="first-section container-fluid centered">
 		<img src="resources/img/burnreel.JPG" alt="Burn Reel" id="burnreel">
 
@@ -88,17 +96,17 @@
 		</div>
 	</div>
 
-	<div class="second-section centered" id="first">
+	<div class="second-section centered" id="first learn">
 		<div class="paragraphs">
 			<p>Need help finding the perfect photographer, videographer
 				<br> or other creatives for your project?</p>
-			<h2 id="learn">Shoot has you covered.</h2>
+			<h2>Shoot has you covered.</h2>
 			<hr id="line">
 		</div>
 	</div>
 
 
-	<div class="third-section">
+	<div class="third-section" id="learn">
 		<div class="row centered" id="row">
 			<div class="col-lg-4 col-sm-12 padding-bottom">
 				<img src="resources/img/Connect-Illustration.png" class="photo-img">
@@ -140,49 +148,60 @@
 	<div class="container" id="slidetag">
 		<h2>Who is already loving Shoot?</h2>
 	</div>
-	<div class="container-fluid">
+	<hr id="line">
+	<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+		<figure>
+			<div class="gallery-cell">
+				<img src="resources/img/alexmolina1.jpg" alt="Alex Molina">
+				<figcaption>By Alex Molina</figcaption>
+				<figcaption></figcaption>
+			</div>
+		</figure>
 
-		<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+		<figure>
+			<div class="gallery-cell">
+				<img src="resources/img/angie2.jpg" alt="Angie Duong">
+				<figcaption>By Angie Duong</figcaption>
+			</div>
+		</figure>
 
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/johncastro1.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by John Castro</p>
-				</div>
+				<img src="resources/img/xdie1.jpg" alt="Mike Phung">
+				<figcaption>By Mike Phung</figcaption>
 			</div>
+		</figure>
+
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/angie2.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by Angie Duong</p>
-				</div>
+				<img src="resources/img/emilyzun1.JPG" alt="Emily Zuniga">
+				<figcaption>By Emily Zuniga</figcaption>
 			</div>
+		</figure>
+
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/emilyzun1.JPG" alt="">
-				<div class="photocred">
-					<p>Photograph by Emily Zuniga</p>
-				</div>
+				<img src="resources/img/jordan1.JPG" alt="Jordan Bernard">
+				<figcaption>By Jordan Bernard</figcaption>
 			</div>
+		</figure>
+
+		<figure>
 			<div class="gallery-cell">
-				<img src="resources/img/angie1.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by Angie Duong</p>
-				</div>
+				<img src="resources/img/alina1.jpeg" alt="Alina Sternberg">
+				<figcaption>By Alina Sternberg</figcaption>
 			</div>
-			<div class="gallery-cell">
-				<img src="resources/img/alexmolina1.jpg" alt="">
-				<div class="photocred">
-					<p>Photograph by Alex Molina</p>
-				</div>
-			</div>
-		</div>
+		</figure>
 
 	</div>
 
-		<!--Signup section-->
+	<!--Signup section-->
 	<!-- Begin MailChimp Signup Form -->
 	<div class="container signup">
 		<div>
 			<h2>Sign up to be the first to know</h2>
+			<hr id="line">
+
 			<p>Get first access to Shoot when we're ready for you.</p>
 		</div>
 
@@ -228,7 +247,7 @@
 					<a href="index.html">
 						<li>Welcome</li>
 					</a>
-					<a href="pages/about.html">
+					<a href="about.html">
 						<li>About Us</li>
 					</a>
 					<a href="comingsoon.html">
@@ -263,12 +282,15 @@
 
 		</div>
 
+		<div id="issue-contact">
+			<span>If you find any issues with the website, please contact news@shootbeta.com</span>
+		</div>
 		<div>
 			<span>&copy Shoot Technology, Inc 2018</span>
 		</div>
 	</footer>
-	
-	
+
+
 	<!--jquery script-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	    crossorigin="anonymous"></script>
@@ -281,9 +303,8 @@
 	<!--flickity js script-->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<!--smooth scroll js-->
-	<script src="/resources/script/smooth-scroll.polyfills.min.js"></script>
+	<script src="resources/script/smooth-scroll.polyfills.min.js"></script>
 	<script src="resources/script/learnmore.js"></script>
-
 
 </body>
 
