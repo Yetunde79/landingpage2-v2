@@ -294,11 +294,6 @@ figcaption {
   text-align: center;
 }
 
-.mc-field-group>div>input {
-  border: none;
-  background-color: #f8f1ee;
-  padding: 10px;
-}
 
 .container {
   display: -webkit-box;
@@ -317,36 +312,19 @@ figcaption {
   font-size: 170%;
 }
 
-#mc_embed_signup input {
+input {
   border: 2px solid rgb(53, 53, 53);
   border-radius: 50px;
   text-align: center;
   margin-top: 10px;
+  padding: 10px;
   width: 50%;
 }
 
-.mc-field-group>div>input {
-  font-size: 150%;
-}
 
 input:focus {
   outline: none;
 }
-
-/* .mc-field-group>.btn {
-  background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border: 2px;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 20px 0px;
-  font-size: 120%;
-  transition: 0.5s;
-}
-
-.mc-field-group>.btn:hover {
-  background-image: black;
-} */
 
 /*Footer*/
 
@@ -478,9 +456,7 @@ div>span {
   .first-section>div>img {
     width: 100%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -507,9 +483,7 @@ div>span {
   #shootLogo {
     width: 25%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -530,9 +504,6 @@ div>span {
   }
   #shootLogo {
     width: 25%;
-  }
-  .mc-field-group>div>input {
-    font-size: 120%;
   }
 }
 
@@ -568,9 +539,7 @@ div>span {
   #shootLogo {
     width: 30%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
-  }
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -631,10 +600,7 @@ div>span {
     padding-right: 10px;
     font-size: 120%;
   }
-  .mc-field-group>div>input {
-    font-size: 100%;
-  }
-  #mc_embed_signup input {
+input {
     width: 80%;
   }
   .signup {
