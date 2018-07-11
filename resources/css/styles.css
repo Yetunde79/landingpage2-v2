@@ -123,7 +123,7 @@ h2 {
 
 .first-section {
   background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3.amazonaws.com/lp2-media-files/burnreel.jpg);
-  height: 100vh;
+  height: 140vh;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -461,6 +461,13 @@ div>span {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* First Section  */
+  .centerdiv {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
   .centerdiv>h1 {
     font-size: 400%;
@@ -473,7 +480,7 @@ div>span {
   }
 
   .centerdiv {
-    top: 50%;
+    top: 55%;
     left: 50%;
   }
   /* Footer */
@@ -488,6 +495,13 @@ div>span {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* First Section  */
+  .centerdiv {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
   .first-section h1 {
     font-size: 400%;
@@ -543,8 +557,12 @@ div>span {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+ 
   /* First Section  */
+  .first-section {
+    height: 100vh;
+  }
+
   .first-section h1 {
     font-size: 300%;
   }
