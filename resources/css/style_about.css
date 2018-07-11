@@ -5,6 +5,7 @@
     letter-spacing: 1.5px;
 }
 
+
 body {
     padding-top: 100px;
     margin: 0;
@@ -198,7 +199,27 @@ ul>a:hover {
 
 
 /* Media Queries */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #line{  
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 35%;
+    margin: 0px;
+    border-radius: 5px;
+  }
 
+  #line_mission{  
+    display:block;
+    border:none;
+    height:5px;
+    background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
+    max-width: 33%;
+    margin: 0px;
+    border-radius: 5px;
+  }
+}
   /* 
       ##Device = Tablets, Ipads (portrait)
       ##Screen = B/w 768px to 1024px
@@ -222,7 +243,7 @@ ul>a:hover {
       border:none;
       height:5px;
       background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
-      max-width: 45%;
+      max-width: 42%;
       margin: 0px;
       border-radius: 5px;
     }
@@ -232,7 +253,7 @@ ul>a:hover {
       border:none;
       height:5px;
       background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
-      max-width: 43%;
+      max-width: 40%;
       margin: 0px;
       border-radius: 5px;
     }
@@ -262,7 +283,7 @@ ul>a:hover {
       border:none;
       height:5px;
       background: linear-gradient(45deg,#DD0C8B, #E52127, #F15B22, #FDD31C);
-      max-width: 45%;
+      max-width: 42%;
       margin: 0px;
       border-radius: 5px;
     }
