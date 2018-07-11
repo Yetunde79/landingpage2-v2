@@ -85,9 +85,6 @@ h2 {
     padding-left: 15px;
 }
 
-#logo {
-    width: 5%;
-}
 
 /*end*/
 
@@ -267,9 +264,7 @@ div>span {
 
 @media (min-width: 481px) and (max-width: 767px) {
     /* Navigation Bar */
-    #logo {
-        width: 15%;
-    }
+
     /*Sign up section*/
     .signup>div>h2 {
         padding-left: 20px;
@@ -325,9 +320,7 @@ div>span {
 
 @media (min-width: 320px) and (max-width: 480px) {
     /* Navigation Bar */
-    #logo {
-        width: 15%;
-    }
+
     /*Sign up section*/
     .signup>div>h2 {
         padding-left: 20px;
