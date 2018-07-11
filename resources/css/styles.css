@@ -87,10 +87,6 @@ h2 {
   justify-content: flex-end;
 }
 
-#logo {
-  width: 5%;
-}
-
 #navbars {
   padding-left: 15px;
 }
@@ -126,14 +122,10 @@ h2 {
 }
 
 .first-section {
-  background-color: black;
-}
-
-.first-section>#burnreel {
-  background-size: contain;
-  padding-top: 55px;
-  max-width: 100%;
-  opacity: 0.5;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3.amazonaws.com/lp2-media-files/burnreel.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .first-section h1 {
@@ -493,9 +485,7 @@ div>span {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* First Section  */
-  #logo {
-    width: 10%;
-  }
+
   .centerdiv>h1 {
     font-size: 400%;
   }
@@ -505,11 +495,9 @@ div>span {
   .first-section>div>img {
     width: 100%;
   }
-  #burnreel {
-    max-width: 100%;
-  }
+
   .centerdiv {
-    top: 55%;
+    top: 50%;
     left: 50%;
   }
   /* Footer */
@@ -526,9 +514,7 @@ div>span {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* First Section  */
-  #logo {
-    width: 10%;
-  }
+
   .first-section h1 {
     font-size: 400%;
   }
@@ -552,24 +538,20 @@ div>span {
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* First Section  */
-  #logo {
-    width: 15%;
-  }
+
   .first-section h1 {
-    font-size: 250%;
+    font-size: 300%;
   }
   .first-section p {
-    font-size: 120%;
+    font-size: 200%;
   }
   .first-section>div>img {
-    width: 80%;
+    width: 100%;
   }
-  #burnreel {
-    max-width: 100%;
-  }
+
   .centerdiv {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -592,31 +574,26 @@ div>span {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  /* Navigation Bar */
-  #logo {
-    width: 15%;
-  }
+
   /* First Section  */
   .first-section h1 {
-    font-size: 150%;
+    font-size: 300%;
   }
   .first-section p {
-    font-size: 100%;
+    font-size: 200%;
   }
   .first-section>div>img {
-    width: 80%;
+    width: 100%;
   }
   .first-section>div>a>button {
-    font-size: 80%;
+    font-size: 100%;
     padding-right: 10px;
     padding-left: 10px;
   }
-  #burnreel {
-    max-width: 100%;
-  }
+
   .centerdiv {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
