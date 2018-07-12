@@ -461,7 +461,7 @@ div>span {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .centerdiv {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
