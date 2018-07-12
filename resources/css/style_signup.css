@@ -41,6 +41,14 @@ h2 {
     font-size: 300%;
 }
 
+#line {
+    width: 50%;
+    display: block;
+    border: none;
+    height: 5px;
+    background: linear-gradient(45deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+}
+
 .nav-a {
     font-size: 100%;
     color: black;
@@ -77,10 +85,6 @@ h2 {
     padding-left: 15px;
 }
 
-#logo {
-    width: 5%;
-}
-
 /*end*/
 
 #mc_embed_signup {
@@ -100,12 +104,6 @@ h2 {
     text-align: center;
 }
 
-.mc-field-group>div>input {
-    border: none;
-    background-color: #f8f1ee;
-    padding: 10px;
-}
-
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -113,11 +111,6 @@ h2 {
 }
 
 .signup>div>h2 {
-    /*Bottom Border with gradient*/
-    border-bottom: 5px solid transparent;
-    -o-border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-    border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-    border-image-slice: 1;
     /*Text-specific*/
     padding-bottom: 25px;
     font-weight: bold;
@@ -129,12 +122,12 @@ h2 {
     font-size: 170%;
 }
 
-#mc_embed_signup input {
+input {
     border: 2px solid rgb(53, 53, 53);
     border-radius: 50px;
     text-align: center;
-    margin-top: 10px;
     padding: 10px;
+    margin-top: 20px;
     width: 50%;
 }
 
@@ -218,6 +211,16 @@ ul>a:hover {
     padding-bottom: 15px;
 }
 
+div>span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 /* Media Queries  */
 
 /* 
@@ -255,9 +258,6 @@ ul>a:hover {
 
 @media (min-width: 481px) and (max-width: 767px) {
     /* Navigation Bar */
-    #logo {
-        width: 15%;
-    }
     /*Sign up section*/
     .signup>div>h2 {
         padding-left: 20px;
@@ -269,10 +269,7 @@ ul>a:hover {
         padding-right: 10px;
         font-size: 150%;
     }
-    .mc-field-group>div>input {
-        font-size: 100%;
-    }
-    #mc_embed_signup input {
+    input {
         width: 80%;
     }
     .signup {
@@ -313,9 +310,6 @@ ul>a:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
     /* Navigation Bar */
-    #logo {
-        width: 15%;
-    }
     /*Sign up section*/
     .signup>div>h2 {
         padding-left: 20px;
@@ -327,10 +321,7 @@ ul>a:hover {
         padding-right: 10px;
         font-size: 120%;
     }
-    .mc-field-group>div>input {
-        font-size: 80%;
-    }
-    #mc_embed_signup input {
+    input {
         width: 80%;
     }
     .signup {
