@@ -40,6 +40,11 @@ h2 {
   font-size: 250%;
 }
 
+#navdiv {
+  display: flex;
+}
+
+
 .nav-a {
   font-size: 100%;
   color: black;
@@ -72,12 +77,18 @@ h2 {
   padding-right: 15px;
 }
 
-#navbars {
-  padding-left: 15px;
+#logolink {
+  display: flex;
+  justify-content: flex-start;
 }
 
-#logo {
-  width: 5%;
+#items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbars {
+  padding-left: 15px;
 }
 
 /*end*/
@@ -111,13 +122,10 @@ h2 {
 }
 
 .first-section {
-  background-color: black;
-}
-
-.first-section>#burnreel {
-  padding-top: 55px;
-  max-width: 100%;
-  opacity: 0.5;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3.amazonaws.com/lp2-media-files/burnreel.jpg);
+  height: 140vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .first-section h1 {
@@ -257,18 +265,12 @@ figcaption {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 #slidetag>h2 {
   /*Bottom Border with gradient*/
-  border-bottom: 5px solid transparent;
-  -o-border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1;
   /*Text-specific*/
   text-align: center;
-  padding-bottom: 25px;
   font-weight: bold;
   font-size: 300%;
 }
@@ -292,11 +294,6 @@ figcaption {
   text-align: center;
 }
 
-.mc-field-group>div>input {
-  border: none;
-  background-color: #f8f1ee;
-  padding: 10px;
-}
 
 .container {
   display: -webkit-box;
@@ -305,13 +302,7 @@ figcaption {
 }
 
 .signup>div>h2 {
-  /*Bottom Border with gradient*/
-  border-bottom: 5px solid transparent;
-  -o-border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border-image-slice: 1;
   /*Text-specific*/
-  padding-bottom: 25px;
   font-weight: bold;
   font-size: 400%;
 }
@@ -321,36 +312,19 @@ figcaption {
   font-size: 170%;
 }
 
-#mc_embed_signup input {
+input {
   border: 2px solid rgb(53, 53, 53);
   border-radius: 50px;
   text-align: center;
   margin-top: 10px;
+  padding: 10px;
   width: 50%;
 }
 
-.mc-field-group>div>input {
-  font-size: 150%;
-}
 
 input:focus {
   outline: none;
 }
-
-/* .mc-field-group>.btn {
-  background-image: linear-gradient(140deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
-  border: 2px;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 20px 0px;
-  font-size: 120%;
-  transition: 0.5s;
-}
-
-.mc-field-group>.btn:hover {
-  background-image: black;
-} */
 
 /*Footer*/
 
@@ -408,6 +382,20 @@ ul>a:hover {
   padding-bottom: 15px;
 }
 
+div>span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#issue-contact {
+  padding-bottom: 30px;
+}
+
 /*Icons*/
 
 /* a>i {
@@ -426,10 +414,20 @@ ul>a:hover {
   transition: 0.5s;
 } */
 
+@media (min-width: 1920px) {
+  .centerdiv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (min-width: 1281px) {
   .centerdiv {
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -458,16 +456,12 @@ ul>a:hover {
   .first-section>div>img {
     width: 100%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* First Section  */
-  #logo {
-    width: 10%;
-  }
+
   .centerdiv>h1 {
     font-size: 400%;
   }
@@ -477,11 +471,9 @@ ul>a:hover {
   .first-section>div>img {
     width: 100%;
   }
-  #burnreel {
-    max-width: 100%;
-  }
+
   .centerdiv {
-    top: 55%;
+    top: 50%;
     left: 50%;
   }
   /* Footer */
@@ -491,16 +483,16 @@ ul>a:hover {
   #shootLogo {
     width: 25%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
+
+  .first-section {
+    height: 98vh;
   }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* First Section  */
-  #logo {
-    width: 10%;
-  }
+
   .first-section h1 {
     font-size: 400%;
   }
@@ -517,31 +509,25 @@ ul>a:hover {
   #shootLogo {
     width: 25%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
-  }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* First Section  */
-  #logo {
-    width: 15%;
-  }
+
   .first-section h1 {
-    font-size: 250%;
+    font-size: 300%;
   }
   .first-section p {
-    font-size: 120%;
+    font-size: 200%;
   }
   .first-section>div>img {
-    width: 80%;
+    width: 100%;
   }
-  #burnreel {
-    max-width: 100%;
-  }
+
   .centerdiv {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -558,37 +544,34 @@ ul>a:hover {
   #shootLogo {
     width: 30%;
   }
-  .mc-field-group>div>input {
-    font-size: 120%;
-  }
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  /* Navigation Bar */
-  #logo {
-    width: 15%;
-  }
+ 
   /* First Section  */
+  .first-section {
+    height: 100vh;
+  }
+
   .first-section h1 {
-    font-size: 150%;
+    font-size: 300%;
   }
   .first-section p {
-    font-size: 100%;
+    font-size: 200%;
   }
   .first-section>div>img {
-    width: 80%;
+    width: 100%;
   }
   .first-section>div>a>button {
-    font-size: 80%;
+    font-size: 100%;
     padding-right: 10px;
     padding-left: 10px;
   }
-  #burnreel {
-    max-width: 100%;
-  }
+
   .centerdiv {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -626,10 +609,7 @@ ul>a:hover {
     padding-right: 10px;
     font-size: 120%;
   }
-  .mc-field-group>div>input {
-    font-size: 100%;
-  }
-  #mc_embed_signup input {
+input {
     width: 80%;
   }
   .signup {
