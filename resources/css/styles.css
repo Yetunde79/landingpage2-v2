@@ -123,7 +123,7 @@ h2 {
 
 .first-section {
   background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3.amazonaws.com/lp2-media-files/burnreel.jpg);
-  height: 100vh;
+  height: 140vh;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -484,6 +484,10 @@ div>span {
     width: 25%;
   }
 
+  .first-section {
+    height: 98vh;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -505,6 +509,7 @@ div>span {
   #shootLogo {
     width: 25%;
   }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -543,8 +548,12 @@ div>span {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+ 
   /* First Section  */
+  .first-section {
+    height: 100vh;
+  }
+
   .first-section h1 {
     font-size: 300%;
   }
