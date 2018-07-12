@@ -417,21 +417,34 @@ div>span {
 @media (min-width: 1920px) {
   .centerdiv {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1368px) {
   .centerdiv {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
+  .first-section h1 {
+    font-size: 400%;
+  }
+  
+  .first-section p {
+    font-size: 250%;
+  }
+
+  .first-section>div>img {
+    width: 95%;
+  }
+
   .carousel {
     height: 500px;
   }
