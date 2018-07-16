@@ -11,7 +11,8 @@ The second iteration for Landing Page 2, reflecting updated designs.
 
 - Issues:
   - Slight contrast issues with left icon.
-  - Need a few more photos for slideshow
+  - Need a few more photos for slideshow.
+  - iPhone 8+: Slideshow has weird transitioning when sliding across. Could be because of size of each photo. WIll add more padding to seperate it. form other elements.
 
 - Notes:
   - Microsoft Edge will be put on the backlog for now. Will find fix if we get complaints.
