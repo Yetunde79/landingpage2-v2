@@ -6,7 +6,7 @@ The second iteration for Landing Page 2, reflecting updated designs.
 - Second release of Landing Page 2.
 
 - Fixes:
-  - iPhone/macOS browsers border issue no more. Used <hr> with gradient property.
+  - iPhone/macOS browsers border issue no more. Used "<hr>" with gradient property.
   - Added more resolutions under media queries for centerdiv.
 
 - Issues:
